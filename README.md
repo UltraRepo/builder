@@ -1,10 +1,10 @@
-# AirVeo Builder VS Code Extension
+# UltraRepo App Builder VS Code Extension
 
 <div align="center">
-  <img src="ultrarepo.png" alt="AirVeo Builder VS Code Extension" width="800">
+  <img src="ultrarepo-home.jpg" alt="UltraRepo App Builder VS Code Extension" width="800">
 </div>
 
-AirVeo Builder is a free AI coding tool that allows you to use **local AI services** at no charge, or your own remote AI services accounts from OpenRouter, xAI, Google, OpenAI, Anthropic and more. We're building in a set of repository tools that will extend the range of AI LLMs to well beyond the typical 1MB context window.
+UltraRepo App Builder is a free AI coding tool that allows you to use **local AI services** at no charge, or your own remote AI services accounts from OpenRouter, xAI, Google, OpenAI, Anthropic and more. We're building in a set of repository tools that will extend the range of AI LLMs to well beyond the typical 1MB context window.
 
 ## Developer Quickstart
 
@@ -12,20 +12,20 @@ AirVeo Builder is a free AI coding tool that allows you to use **local AI servic
 
 **Problem:** Nearly all IDEs utilize remote, cloud based AI services.  While remote services can be very useful for persistence across projects and as a team resource, often we desire the privacy, control, performance and financial freedoms that only a private AI infrastructure can provide. One huge problem: AI IDEs have poor memory, and a context window of 1MB is completely inadequate for most professional dev projects.
 
-**Solution:** AirVeo Builder for VS Code is designed to provide developers with local control over all elements of their dev environment. With a set of advanced coding tools, MCP Hub services and more, AirVeo Builder extends the capability, reliability, accuracy and context window of typical AI IDEs. By default, AirVeo Builder provides a platform that uses **local AI** via LMstudio or Docker AI Services (100% OpenAI Compatible) on your local machine. You can use **remote AI** cloud services if you want -- just add your api key and AI services info (stored in VS Code Secrets).
+**Solution:** UltraRepo App Builder for VS Code is designed to provide developers with local control over all elements of their dev environment. With a set of advanced coding tools, MCP Hub services and more, UltraRepo App Builder extends the capability, reliability, accuracy and context window of typical AI IDEs. By default, UltraRepo App Builder provides a platform that uses **local AI** via LMstudio or Docker AI Services (100% OpenAI Compatible) on your local machine. You can use **remote AI** cloud services if you want -- just add your api key and AI services info (stored in VS Code Secrets).
 
 ## Overview of Rebranding and Building Scripts
 
-This document describes the complete process for transforming the KiloCode/UltraRepo VS Code extension into the AirVeo Builder-branded extension with refactored commands and custom branding.
+This document describes the complete process for transforming the KiloCode VS Code extension into the UltraRepo App Builder-branded extension with refactored commands and custom branding.
 
 ## Project structure (developer view)
 
 ```
-/Users/jetstart/dev/airveo-builder/
+/Users/jetstart/dev/ultrarepo/builder/
 ├── upstream/kilocode/                # Original KiloCode source (read-only/submodule)
 ├── build/kilocode/                   # Working build copy created by rebrand scripts (generated)
 ├── rebrand/                          # Rebrand source files, patches, and scripts (edit here)
-│   ├── assets/icons/                 # AirVeo Builder icon assets used during rebrand
+│   ├── assets/icons/                 # UltraRepo App Builder icon assets used during rebrand
 │   ├── webview-ui/                   # Optional React webview UI sources (built separately)
 │   └── scripts/                      # Automation scripts (build, rebrand, patch NLS)
 ├── .ultrarepo/archivenew/            # Archive of moved/experimental files (not packaged)
@@ -42,8 +42,7 @@ Notes:
 ## Source Repository
 
 - **Original Repository (KiloCode)**: https://github.com/Kilo-Org/kilocode
-- **Upstream (UltraRepo)**: https://github.com/[ultrarepo-org]/ultrarepo
-- **This Repository (AirVeo Builder)**: https://github.com/airveo/builder
+- **This Repository (UltraRepo App Builder)**: https://github.com/UltraRepo/builder
 - **Local Copy**: `upstream/kilocode/` (Git submodule or copy)
 - **Build Directory**: `build/kilocode/` (working copy for modifications)
 
@@ -52,14 +51,14 @@ Notes:
 ### 1. Scripts (`rebrand/scripts/`)
 
 #### Core Rebranding Scripts
-- **`patch-nls-builder.sh`** - Updates package.json and localization files for AirVeo Builder
-- **`icon-rebrand-builder.sh`** - Replaces KiloCode icons with AirVeo Builder icons
+- **`patch-nls-builder.sh`** - Updates package.json and localization files for UltraRepo App Builder
+- **`icon-rebrand-builder.sh`** - Replaces KiloCode icons with UltraRepo App Builder icons
 - **`rebrand-webviews-builder.sh`** - Applies webview and file rebranding
-- **`build-airveo-complete.sh`** - Complete automated build process
+- **`build-ultrarepo-complete.sh`** - Complete automated build process
 
 ### 2. Assets (`rebrand/assets/`)
 
-#### AirVeo Builder Icons
+#### UltraRepo App Builder Icons
 - **`icon.png`** - Main extension icon
 - **`logo-outline-black.gif`** - Animated logo
 - **`logo-outline-black-blue.png`** - Alternative logo variant
@@ -74,26 +73,23 @@ The `patch-nls-builder.sh` script transforms:
 ```json
 {
   "name": "ultrarepo" → "builder",
-  "publisher": "UltraRepo" → "AirVeo",
-  "displayName": "%extension.displayName%"  // Uses localization
+  "publisher": "UltraRepo"
 }
 ```
 
 **Localization Files (package.nls*.json):**
 ```json
 {
-  "extension.displayName": "UltraRepo" 
-    → "AirVeo Builder",
-  "extension.description": "Open Source AI coding assistant" 
-    → "Open Source AI coding assistant"
+  "extension.displayName": "UltraRepo",
+  "extension.description": "Open Source AI coding assistant"
 }
 ```
 
-**Result**: Extension ID changes from `UltraRepo.ultrarepo` to `AirVeo.builder`
+**Result**: Extension ID is `UltraRepo.builder`
 
 ### Phase 2: Icon Rebranding
 
-The `icon-rebrand-builder.sh` script copies AirVeo Builder icons over KiloCode icons in the build directory, ensuring the extension displays AirVeo Builder branding throughout VS Code.
+The `icon-rebrand-builder.sh` script copies UltraRepo App Builder icons over KiloCode icons in the build directory, ensuring the extension displays UltraRepo App Builder branding throughout VS Code.
 
 ## Build Process
 
@@ -101,14 +97,14 @@ The `icon-rebrand-builder.sh` script copies AirVeo Builder icons over KiloCode i
 
 **Command:**
 ```bash
-bash rebrand/scripts/build-airveo-complete.sh
+bash rebrand/scripts/build-ultrarepo-complete.sh
 ```
 
 **Build Steps:**
 1. **Dependency Installation** - `pnpm install`
-2. **Webview Rebranding** - Apply AirVeo Builder webview files
-3. **Extension Rebranding** - Apply AirVeo Builder name/publisher
-4. **Icon Rebranding** - Replace with AirVeo Builder icons
+2. **Webview Rebranding** - Apply UltraRepo App Builder webview files
+3. **Extension Rebranding** - Apply UltraRepo App Builder name/publisher
+4. **Icon Rebranding** - Replace with UltraRepo App Builder icons
 5. **Clean Build** - Remove previous artifacts
 6. **Extension Build** - Compile and package
 7. **VSIX Creation** - Generate installable extension
@@ -123,10 +119,10 @@ build/kilocode/dist/builder-[version].vsix
 If you need to run individual steps:
 
 ```bash
-# 1. Apply AirVeo Builder webview rebranding
+# 1. Apply UltraRepo App Builder webview rebranding
 NO_BACKUP=true bash rebrand/scripts/rebrand-webviews-builder.sh
 
-# 2. Apply AirVeo Builder branding
+# 2. Apply UltraRepo App Builder branding
 bash rebrand/scripts/patch-nls-builder.sh build/kilocode/src
 
 # 3. Apply icon rebranding
@@ -149,7 +145,7 @@ pnpm build
 
 #### Icon Assets
 - **`build/kilocode/src/assets/icons/`** - Extension icons
-- **`rebrand/assets/icons/`** - AirVeo Builder replacement icons
+- **`rebrand/assets/icons/`** - UltraRepo App Builder replacement icons
 
 ### Build Outputs
 
@@ -169,7 +165,7 @@ code --install-extension build/kilocode/dist/builder-[version].vsix
 
 # Uninstall previous versions if needed
 code --uninstall-extension UltraRepo.ultrarepo
-code --uninstall-extension AirVeo.builder
+code --uninstall-extension UltraRepo.builder
 ```
 
 ### Verification
@@ -177,42 +173,42 @@ code --uninstall-extension AirVeo.builder
 After installation, verify the following:
 
 1. **Extension Identity**
-   - Name: "AirVeo Builder"
-   - Publisher: "AirVeo"
-   - Extension ID: `AirVeo.builder`
+   - Name: "UltraRepo App Builder"
+   - Publisher: "UltraRepo"
+   - Extension ID: `UltraRepo.builder`
 
 2. **Command Functionality**
    - Open Command Palette (`Cmd+Shift+P`)
-   - Search for "AirVeo Builder" or "builder" commands
-   - Test: `AirVeo Builder: New Task`
+   - Search for "UltraRepo" commands
+   - Test: `UltraRepo: New Task`
 
 3. **Visual Branding**
-   - AirVeo Builder icon in Extensions panel
-   - AirVeo Builder icon in sidebar when activated
+   - UltraRepo App Builder icon in Extensions panel
+   - UltraRepo App Builder icon in sidebar when activated
    - Proper branding in walkthrough
 
 ## Technical Details
 
 ### Extension ID Impact
 
-Changing the extension ID from `UltraRepo.ultrarepo` to `AirVeo.builder` means:
+The extension ID `UltraRepo.builder` means:
 
-- **Fresh Installation**: No migration of existing settings/state from UltraRepo
+- **Fresh Installation**: No migration of existing settings/state from other extensions
 - **Command Registration**: All commands register under new namespace
 - **VS Code Integration**: New sidebar panel, menu entries, etc.
 - **Marketplace Identity**: Unique extension identity
 
 ## Development Workflow
 
-### Updating from Upstream (UltraRepo)
+### Updating from Upstream (KiloCode)
 
-To incorporate new changes from UltraRepo:
+To incorporate new changes from KiloCode:
 
-1. **Update upstream changes** (if tracking UltraRepo as upstream)
+1. **Update upstream changes** (if tracking KiloCode as upstream)
 2. **Merge into your fork**
 3. **Rebuild with Rebranding**
    ```bash
-   bash rebrand/scripts/build-airveo-complete.sh
+   bash rebrand/scripts/build-ultrarepo-complete.sh
    ```
 
 ### Customizing Branding
@@ -263,15 +259,15 @@ ls -la build/kilocode/src/assets/icons/
 
 ## Version Information
 
-- **Based on**: UltraRepo (KiloCode 4.125.1)
-- **AirVeo Builder Version**: [version] (maintains upstream version numbering)
-- **Build Date**: November 27, 2025
+- **Based on**: KiloCode 4.125.1
+- **UltraRepo App Builder Version**: [version] (maintains upstream version numbering)
+- **Build Date**: November 30, 2025
 - **Node.js**: v22.x (extension targets 20.19.2)
 - **Package Manager**: pnpm
 
 ## v4.125.1 Major Update Summary
 
-This release brings significant enhancements to the AirVeo Builder, incorporating major features from the upstream KiloCode v4.125.1 release.
+This release brings significant enhancements to the UltraRepo App Builder, incorporating major features from the upstream KiloCode v4.125.1 release.
 
 ### Key Features & Improvements
 
@@ -300,4 +296,4 @@ To modify or enhance the rebranding process:
 
 ---
 
-**Note**: This rebranding maintains all original KiloCode/UltraRepo functionality while providing a distinct AirVeo Builder identity. The process is designed to be repeatable and maintainable as the upstream projects evolve.
+**Note**: This rebranding maintains all original KiloCode functionality while providing a distinct UltraRepo App Builder identity. The process is designed to be repeatable and maintainable as the upstream project evolves.
