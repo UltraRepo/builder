@@ -1,0 +1,103 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build outputs
+dist/
+out/
+*.vsix
+*.tgz
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/settings.json
+.vscode/launch.json
+.vscode/extensions.json
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# nyc test coverage
+.nyc_output/
+
+# Dependency directories
+jspm_packages/
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# dotenv environment variables file
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Backup files
+*.backup.*
+*.bak
+
+# Turbo cache
+.turbo/
+
+# Temporary files
+tmp/
+temp/
+
+# Build artifacts specific to this project
+build/kilocode/bin/
+build/kilocode/dist/
+build/kilocode/node_modules/
+build/kilocode/.turbo/
+
+# Keep upstream directory for reference but ignore its build artifacts
+upstream/kilocode/node_modules/
+upstream/kilocode/dist/
+upstream/kilocode/out/
+upstream/kilocode/bin/
+upstream/kilocode/.turbo/
+
+# Explicitly ignore any top-level upstream directory to avoid accidental commits
+upstream/*
+
+# Ignore local ultrarepo workspace directory which holds moved upstream content
+.ultrarepo/*
+
+# Secret files containing API keys and tokens
+.kilocode/mcp.json
+build/kilocode/src/api/providers/gemini-cli.ts

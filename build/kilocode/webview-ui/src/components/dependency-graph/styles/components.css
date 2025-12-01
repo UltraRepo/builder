@@ -1,0 +1,254 @@
+/* Shared Component Styles */
+
+/* Buttons */
+.launch-button,
+.refresh-button,
+.index-button,
+.export-format-button,
+.save-button,
+.download-button,
+.clear-button,
+.add-pattern,
+.remove-pattern,
+.similarity-search-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+
+.launch-button,
+.index-button.primary,
+.export-format-button,
+.save-button,
+.similarity-search-button {
+  background: var(--vscode-button-background);
+  color: var(--vscode-button-foreground);
+}
+
+.launch-button:hover,
+.index-button.primary:hover,
+.export-format-button:hover,
+.save-button:hover,
+.similarity-search-button:hover {
+  background: var(--vscode-button-hoverBackground);
+}
+
+.index-button.secondary,
+.refresh-button,
+.download-button,
+.clear-button,
+.add-pattern {
+  background: var(--vscode-button-secondaryBackground);
+  color: var(--vscode-button-secondaryForeground);
+}
+
+.index-button.secondary:hover,
+.refresh-button:hover,
+.download-button:hover,
+.clear-button:hover,
+.add-pattern:hover {
+  background: var(--vscode-button-secondaryHoverBackground);
+}
+
+.remove-pattern {
+  background: var(--vscode-inputValidation-errorBackground);
+  color: var(--vscode-inputValidation-errorForeground);
+  padding: 4px;
+  min-width: auto;
+}
+
+.remove-pattern:hover {
+  background: var(--vscode-inputValidation-errorBorder);
+}
+
+.launch-button:disabled,
+.index-button:disabled,
+.export-format-button:disabled,
+.save-button:disabled,
+.similarity-search-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Status indicators */
+.status-idle,
+.status-neutral {
+  color: var(--vscode-descriptionForeground);
+}
+
+.status-info,
+.status-indexing {
+  color: var(--vscode-progressBar-background);
+}
+
+.status-success,
+.status-completed {
+  color: var(--vscode-charts-green);
+}
+
+.status-error {
+  color: var(--vscode-errorForeground);
+}
+
+/* Loading spinners */
+.codicon-loading {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Progress bars */
+.progress-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 4px;
+  background: var(--vscode-progressBar-background);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: var(--vscode-progressBar-background);
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 12px;
+  color: var(--vscode-descriptionForeground);
+  min-width: 32px;
+  text-align: right;
+}
+
+/* Cards and containers */
+.card,
+.format-card,
+.job-item,
+.entity-item,
+.setting-item {
+  background: var(--vscode-editorWidget-background);
+  border: 1px solid var(--vscode-widget-border);
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 12px;
+}
+
+.card:hover,
+.format-card:hover {
+  border-color: var(--vscode-focusBorder);
+}
+
+/* Form elements */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 6px 8px;
+  background: var(--vscode-input-background);
+  color: var(--vscode-input-foreground);
+  border: 1px solid var(--vscode-input-border);
+  border-radius: 3px;
+  font-size: 13px;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--vscode-focusBorder);
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 8px;
+}
+
+/* Labels */
+label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 4px;
+  color: var(--vscode-editor-foreground);
+}
+
+small {
+  display: block;
+  font-size: 12px;
+  color: var(--vscode-descriptionForeground);
+  margin-top: 4px;
+}
+
+/* Grid layouts */
+.format-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.jobs-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.entity-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Utility classes */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+
+.mt-8 { margin-top: 8px; }
+.mt-12 { margin-top: 12px; }
+.mt-16 { margin-top: 16px; }
+
+.mb-8 { margin-bottom: 8px; }
+.mb-12 { margin-bottom: 12px; }
+.mb-16 { margin-bottom: 16px; }
+
+.hidden { display: none; }
+.flex { display: flex; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.gap-8 { gap: 8px; }
+.gap-12 { gap: 12px; }
+.gap-16 { gap: 16px; }
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  .format-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .launch-button,
+  .index-button,
+  .export-format-button,
+  .save-button {
+    width: 100%;
+    justify-content: center;
+  }
+}

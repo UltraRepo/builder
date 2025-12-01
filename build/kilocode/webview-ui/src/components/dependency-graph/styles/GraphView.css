@@ -1,0 +1,45 @@
+/* Graph View Main Styles */
+.graph-view {
+  min-height: 100vh;
+  background: var(--vscode-editor-background);
+  color: var(--vscode-editor-foreground);
+  font-family: var(--vscode-font-family);
+}
+
+.graph-header {
+  padding: 20px;
+  border-bottom: 1px solid var(--vscode-panel-border);
+  background: var(--vscode-editor-background);
+}
+
+.graph-title {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--vscode-editor-foreground);
+}
+
+.graph-subtitle {
+  margin: 0;
+  font-size: 14px;
+  color: var(--vscode-descriptionForeground);
+}
+
+.graph-content {
+  padding: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .graph-header {
+    padding: 16px;
+  }
+
+  .graph-title {
+    font-size: 20px;
+  }
+
+  .graph-content {
+    padding: 16px;
+  }
+}

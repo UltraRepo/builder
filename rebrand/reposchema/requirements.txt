@@ -1,0 +1,15 @@
+# Minimal requirements.txt for CIR (Codebase Index Repository) features
+# Based on actual usage analysis of repo-schema.py and anticipated CIR needs
+
+# Core functionality (currently used)
+pathspec>=0.12.1          # Gitignore pattern matching
+
+# CIR-specific features (anticipated)
+qdrant-client             # Qdrant vector database integration
+rdflib                    # JSON-LD processing and RDF handling
+aiohttp>=3.8.0           # Async HTTP client for AI service API calls
+networkx>=3.0            # Graph algorithms for dependency analysis
+
+# Future extensibility (optional)
+# langchain>=0.1.0        # LLM framework for advanced repository management
+# sentence-transformers   # Text embeddings for enhanced search

@@ -1,0 +1,80 @@
+diff --git a/webview-ui/src/components/settings/SettingsView.tsx b/webview-ui/src/components/settings/SettingsView.tsx
+index 0e21fe3ce..c145fbe04 100644
+--- a/webview-ui/src/components/settings/SettingsView.tsx
++++ b/webview-ui/src/components/settings/SettingsView.tsx
+@@ -25,6 +25,7 @@ import {
+ 	Bot, // kilocode_change
+ 	MessageSquare,
+ 	Monitor,
++	Home,
+ 	LucideIcon,
+ } from "lucide-react"
+ 
+@@ -102,6 +103,7 @@ const sectionNames = [
+ 	"language",
+ 	"mcp",
+ 	"about",
++	"home",
+ ] as const
+ 
+ type SectionName = (typeof sectionNames)[number] // kilocode_change
+@@ -515,6 +517,7 @@ const SettingsView = forwardRef<SettingsViewRef, SettingsViewProps>(({ onDone, t
+ 			{ id: "language", icon: Globe },
+ 			{ id: "mcp", icon: Server },
+ 			{ id: "about", icon: Info },
++			{ id: "home", icon: Home },
+ 		],
+ 		[extensionState.experiments?.inlineAssist], // kilocode_change
+ 	)
+@@ -864,6 +867,51 @@ const SettingsView = forwardRef<SettingsViewRef, SettingsViewProps>(({ onDone, t
+ 					{activeTab === "about" && (
+ 						<About telemetrySetting={telemetrySetting} setTelemetrySetting={setTelemetrySetting} />
+ 					)}
++
++					{/* Home Section */}
++					{activeTab === "home" && (
++						<div>
++							<SectionHeader>
++								<div className="flex items-center gap-2">
++									<Home className="w-4" />
++									<div>{t("settings:sections.home")}</div>
++								</div>
++							</SectionHeader>
++
++							<Section>
++								<div className="text-center py-8">
++									<h3 className="text-lg font-semibold mb-4">Welcome to UltraRepo</h3>
++									<p className="text-vscode-descriptionForeground mb-6">
++										Your AI-powered development assistant for faster, smarter coding.
++									</p>
++
++									<div className="mb-6">
++										<Button
++											onClick={() => vscode.postMessage({ type: "run-cmd", cmd: "ultrarepo.home" } as any)}
++											className="px-6 py-2"
++										>
++											Launch UltraRepo Home
++										</Button>
++									</div>
++
++									<div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-left">
++										<div className="p-4 border border-vscode-panel-border rounded">
++											<h4 className="font-medium mb-2">🚀 Quick Actions</h4>
++											<p className="text-sm text-vscode-descriptionForeground">
++												Access common development tasks and AI-powered features
++											</p>
++										</div>
++										<div className="p-4 border border-vscode-panel-border rounded">
++											<h4 className="font-medium mb-2">⚙️ Settings</h4>
++											<p className="text-sm text-vscode-descriptionForeground">
++												Configure providers, auto-approve settings, and preferences
++											</p>
++										</div>
++									</div>
++								</div>
++							</Section>
++						</div>
++					)}
+ 				</TabContent>
+ 			</div>
+ 

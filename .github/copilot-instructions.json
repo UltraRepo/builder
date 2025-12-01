@@ -1,0 +1,113 @@
+{
+  "version": "1.0",
+  "sourceMarkdown": ".github/copilot-instructions.md",
+  "description": "Machine-readable config of repository rules, workflows and guidance for AI coding agents.",
+  "safety": {
+    "neverEditUpstream": true,
+    "upstreamPath": "upstream/",
+    "rebrandIsSourceOfTruth": true,
+    "ignorePatterns": ["upstream/*", ".ultrarepo/*"],
+    "telemetryOptOutHints": ["KILO_DISABLE_TELEMETRY=1", "POSTHOG_DISABLED=1"],
+    "gitmodulesRule": "Do not change .gitmodules location — leave it at repo root. If submodule paths moved locally, prefer creating runtime symlink or updating local config; do not move .gitmodules."
+  },
+  "workflow": {
+    "install": "pnpm install",
+    "runPackage": "pnpm --filter <package> <script>",
+    "buildBrandedExtension": "bash rebrand/scripts/build-ultrarepo-complete.sh",
+    "test": "pnpm turbo run test --filter <project_name>"
+  },
+  "repositoryStructure": {
+    "bigPicture": "This repo is a rebrand/assembly around a third-party extension (KiloCode), enhanced with UltraRepo-specific features for AI-assisted code intelligence, discovery and accuracy and code generation. The repo structure utilizes upstream submodules, rebranded assets, modified code as needed for UltraRepo, and a build process to create the final packaged extension.",
+    "folders": {
+      ".ultrarepo/upstream/*": "Reference — original source git submodules referencing paths in the upstream repo. Use it for read-only inspection only. DO NOT EDIT. If you need to propose changes to upstream, do so in the rebrand/ folder, as code in the rebrand folder is applied to the build/ folder during the build process by running the rebrand/script/build script at rebrand/scripts/build-ultrarepo-complete.sh",
+      "build/": "Working build folder where changes are applied, compiled, and packaged. build/ contains a full copy of the upstream code, plus any modifications applied during the build process. This is the folder that is actually built and packaged as the VS Code extension.",
+      "rebrand/": "Assets, code, and configuration used to transform upstream into an UltraRepo build. For consistency, files and folders under rebrand/ are organized in a way that mostly mirrors the build/ (and upstream) structures, with the exception of repo-specific modifications. Rebrand changes are applied to build/ during the build process by the build script at rebrand/scripts/build-ultrarepo-complete.sh",
+      "rebrand/scripts/*": "Directory containing all UltraRepo-specific scripts and modifications, including rebranded assets and configuration files."
+    }
+  },
+  "buildOutput": {
+    "vsix": ["build/kilocode/dist/ultrarepo-4.83.1.vsix", "build/kilocode/src/dist/ultrarepo-4.83.1.vsix"],
+    "note": "Use the build path above to install the VSIX (code --install-extension <path>)"
+  },
+  "editingGuidance": {
+    "preferredEditTarget": "rebrand/",
+    "generatedFolder": "build/",
+    "editRule": "Always change source in rebrand/ then run the build script; build/ is generated and will be overwritten.",
+    "avoid": [".ultrarepo/upstream/*", "upstream/*"],
+    "firstInstallFlow": "The extension may auto-open sidebars/walkthroughs on first install (search 'firstInstallCompleted'). Avoid unexpected UX changes."
+  ,
+  "autoCommitPolicy": "Do NOT perform git add/commit/push automatically. Changes must not be committed or pushed without explicit user instruction. When the user requests edits, make the file changes but leave them unstaged; only commit/push when the user says 'commit and push' and provides the commit message."
+  },
+  "homeWebview": {
+    "primarySource": "rebrand/kilocode/src/extension.ts",
+    "builtCopy": "build/kilocode/src/extension.ts",
+    "panelClass": "UltraHomePanel",
+    "creation": "UltraHomePanel.createOrShow(context.extensionUri)",
+    "panelId": "ultrarepoHomePanel",
+    "webviewOptions": {"enableScripts": true, "retainContextWhenHidden": true},
+    "htmlProvider": "UltraHomePanel.getHtml()",
+    "messageContract": "use acquireVsCodeApi() in client; extension handles webview.onDidReceiveMessage and maps to vscode.commands.executeCommand or vscode.env.openExternal",
+    "devCycle": [
+      "Edit rebrand/kilocode/src/extension.ts or rebrand/kilocode/src/webview-ui",
+      "Run bash rebrand/scripts/build-ultrarepo-complete.sh",
+      "Verify VSIX at build/kilocode/dist/"
+    ]
+  },
+  "commands": {
+    "centralRegistration": "rebrand/kilocode/src/activate/registerCommands.ts",
+    "builtRegistration": "build/kilocode/src/activate/registerCommands.ts",
+    "packageJsonPath": "rebrand/kilocode/src/package.json",
+    "builtPackageJson": "build/kilocode/src/package.json",
+    "contributeCommands": "Use 'contributes.commands' entries with title referencing NLS keys, e.g. \"title\": \"%command.showDependencyGraph.title%\""
+  },
+  "i18n": {
+    "sourceNls": "rebrand/kilocode/src/package.nls.json",
+    "builtNls": "build/kilocode/src/package.nls.json",
+    "runtimeHelper": "t('key') from ../i18n",
+    "notes": "Add keys to rebrand/package.nls.json and run the build to propagate into build/ and webview bundles"
+  },
+  "webviewTips": [
+    "Keep HTML/JS minimal and avoid embedding secrets or absolute file paths.",
+    "Use webview.asWebviewUri() for extension resources.",
+    "Keep message payloads small and typed; validate in onDidReceiveMessage handlers."
+  ],
+  "references": {
+    "commandWiring": "build/kilocode/src/activate/registerCommands.ts",
+    "extensionActivationServices": "build/kilocode/src/extension.ts",
+    "ghostAIProvider": "build/kilocode/src/services/ghost/ (example of AI integration)",
+    "rebrandScripts": "rebrand/scripts/ (show how changes are mass-applied)"
+  },
+  "editorChecklist": [
+    "When adding a command: update rebrand registerCommands and rebrand package.json, then run build script.",
+    "When changing Home UI: update UltraHomePanel.getHtml() and any command ids it calls.",
+    "Run lint/type-check and smoke build before proposing PRs."
+  ],
+  "aiTools": {
+    "codebase_search": {
+      "description": "Semantic search tool for finding functionally relevant code across the entire codebase, even without exact keywords or file names. Useful for understanding feature implementations, discovering API usages, and finding code examples.",
+      "usage": {
+        "general": "Use for ANY exploration of code you haven't examined yet in the conversation. Must be used FIRST before other search tools when exploring new code areas.",
+        "projectSpecificQueries": "Reuse the user's exact wording/question format for queries. For example, search for 'user authentication flow' or 'dependency injection pattern' to find relevant implementations.",
+        "retrievingFileInfo": "Results include file paths and relevant code snippets. Use the returned file paths to read specific files with read_file tool for detailed examination."
+      },
+      "parameters": {
+        "query": "Required - The search query in natural language. Reuse user's exact wording unless there's a clear reason not to.",
+        "path": "Optional - Limit search to specific subdirectory relative to workspace root (/Users/jetstart/dev/ultrarepo/code). Leave empty for entire workspace."
+      },
+      "examples": [
+        "Search entire codebase: <codebase_search><query>user login and password hashing</query></codebase_search>",
+        "Search specific directory: <codebase_search><query>API endpoints</query><path>src/api</path></codebase_search>"
+      ],
+      "bestPractices": [
+        "Always use semantic search first when exploring unfamiliar code",
+        "Use natural language queries that describe functionality rather than exact code terms",
+        "Follow up search results with read_file for detailed code examination",
+        "Limit scope with path parameter when searching large codebases"
+      ]
+    }
+  },
+  "contact": {
+    "maintainerHint": "Open an issue or PR describing changes; include a reproducible smoke build log when relevant.",
+    "doubtGuidance": "If an edit touches upstream/, stop and propose a patch in rebrand/ instead. Ask for a reproducible local test (build script + smoke run) before creating a PR."
+  }
+}

@@ -1,0 +1,3404 @@
+{
+  "project": "code",
+  "version": "1.0",
+  "taxonomy": [
+    {
+      "folder": "./",
+      "files": [
+        {
+          "name": ".gitignore",
+          "path": ".gitignore",
+          "metadata": {
+            "modified": "2025-08-23T21:14:01.543841",
+            "type": "",
+            "ai_description": "Git ignore rules file",
+            "extracted_description": "node_modules/",
+            "size_bytes": 1230,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": ".gitmodules",
+          "path": ".gitmodules",
+          "metadata": {
+            "modified": "2025-08-23T11:46:27.164905",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "[submodule \"upstream/kilocode\"]",
+            "size_bytes": 102,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "AGENTS.md",
+          "path": "AGENTS.md",
+          "metadata": {
+            "modified": "2025-08-23T11:51:17.944618",
+            "type": ".md",
+            "ai_description": "Markdown documentation file",
+            "extracted_description": "- NEVER modify code in the folder /upstream",
+            "size_bytes": 1341,
+            "code_summary": "Sections: Sample AGENTS.md file, Dev environment rules, Dev environment tips"
+          }
+        },
+        {
+          "name": "backup-creation-fix-summary.md",
+          "path": "backup-creation-fix-summary.md",
+          "metadata": {
+            "modified": "2025-08-24T03:54:06.121709",
+            "type": ".md",
+            "ai_description": "Markdown documentation file",
+            "extracted_description": "(Empty file)",
+            "size_bytes": 0,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "CIR_Task_Tracking.md",
+          "path": "CIR_Task_Tracking.md",
+          "metadata": {
+            "modified": "2025-09-04T16:47:50.488269",
+            "type": ".md",
+            "ai_description": "Markdown documentation file",
+            "extracted_description": "**Document Version:** 1.0",
+            "size_bytes": 13832,
+            "code_summary": "Sections: CIR (Codebase Index Repository, \ud83d\udccb Task Overview, \ud83c\udfaf Implementation Phases"
+          }
+        },
+        {
+          "name": "codebase-indexing-docs.md",
+          "path": "codebase-indexing-docs.md",
+          "metadata": {
+            "modified": "2025-09-04T15:13:29.497881",
+            "type": ".md",
+            "ai_description": "Markdown documentation file",
+            "extracted_description": "This document provides a detailed description of the codebase indexing functiona",
+            "size_bytes": 5233,
+            "code_summary": "Sections: Codebase Indexing Documentatio, Identified Files, Services"
+          }
+        },
+        {
+          "name": "Codebase_Indexing_Enhancement_plan.md",
+          "path": "Codebase_Indexing_Enhancement_plan.md",
+          "metadata": {
+            "modified": "2025-09-04T16:47:18.274546",
+            "type": ".md",
+            "ai_description": "Markdown documentation file",
+            "extracted_description": "This document outlines the enhancement of the existing codebase indexing functio",
+            "size_bytes": 50353,
+            "code_summary": "Sections: Codebase Indexing Enhancement , Overview, Current Codebase Indexing Arch"
+          }
+        },
+        {
+          "name": "file-reappearance-investigation.md",
+          "path": "file-reappearance-investigation.md",
+          "metadata": {
+            "modified": "2025-08-24T03:46:34.653864",
+            "type": ".md",
+            "ai_description": "Markdown documentation file",
+            "extracted_description": "*Generated: August 24, 2025*",
+            "size_bytes": 4417,
+            "code_summary": "Sections: File Reappearance Investigatio, Summary, \ud83d\udd0d Investigation Results"
+          }
+        },
+        {
+          "name": "openai-provider-operation.md",
+          "path": "openai-provider-operation.md",
+          "metadata": {
+            "modified": "2025-08-24T04:08:34.998109",
+            "type": ".md",
+            "ai_description": "Markdown documentation file",
+            "extracted_description": "The `OpenAIContentGenerator` class in the Qwen Code project serves as a crucial ",
+            "size_bytes": 2847,
+            "code_summary": "Sections: OpenAI Provider Operation in Q, Key Functionalities, 1. Initialization and Configur"
+          }
+        },
+        {
+          "name": "README.md",
+          "path": "README.md",
+          "metadata": {
+            "modified": "2025-08-24T01:22:32.226784",
+            "type": ".md",
+            "ai_description": "Project documentation and overview",
+            "extracted_description": "<div align=\"center\">",
+            "size_bytes": 12225,
+            "code_summary": "Sections: UltraRepo VS Code Extension Co, Problem and Solution Vision, Overview of Rebranding and Bui"
+          }
+        },
+        {
+          "name": "toolbar-fix-success-summary.md",
+          "path": "toolbar-fix-success-summary.md",
+          "metadata": {
+            "modified": "2025-08-24T01:56:04.215468",
+            "type": ".md",
+            "ai_description": "Markdown documentation file",
+            "extracted_description": "",
+            "size_bytes": 4000,
+            "code_summary": "Sections: UltraRepo Extension: Toolbar F, \u2705 **MAJOR SUCCESS: Toolbar Ico, **Problem Solved**"
+          }
+        },
+        {
+          "name": "ultrarepo-build-process.md",
+          "path": "ultrarepo-build-process.md",
+          "metadata": {
+            "modified": "2025-08-24T01:49:32.229210",
+            "type": ".md",
+            "ai_description": "Markdown documentation file",
+            "extracted_description": "(Empty file)",
+            "size_bytes": 0,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "ultrarepo-chat-request-debugging.md",
+          "path": "ultrarepo-chat-request-debugging.md",
+          "metadata": {
+            "modified": "2025-08-24T03:17:31.227994",
+            "type": ".md",
+            "ai_description": "Markdown documentation file",
+            "extracted_description": "*Last Updated: August 24, 2025*",
+            "size_bytes": 11990,
+            "code_summary": "Sections: UltraRepo Chat Request Debuggi, Overview, Table of Contents"
+          }
+        },
+        {
+          "name": "ultrarepo-debug-plan.md",
+          "path": "ultrarepo-debug-plan.md",
+          "metadata": {
+            "modified": "2025-08-24T03:22:29.905435",
+            "type": ".md",
+            "ai_description": "Markdown documentation file",
+            "extracted_description": "*Last Updated: August 24, 2025*",
+            "size_bytes": 16868,
+            "code_summary": "Sections: UltraRepo Debug Plan: Chat Req, Overview, Table of Contents"
+          }
+        },
+        {
+          "name": "UltraRepo-README.md",
+          "path": "UltraRepo-README.md",
+          "metadata": {
+            "modified": "2025-08-24T01:23:12.608949",
+            "type": ".md",
+            "ai_description": "Markdown documentation file",
+            "extracted_description": "<div align=\"center\">",
+            "size_bytes": 12236,
+            "code_summary": "Sections: UltraRepo VS Code Extension Co, Problem and Solution Vision, Overview of Rebranding and Bui"
+          }
+        },
+        {
+          "name": "vscode-commands-toolbar-fix.md",
+          "path": "vscode-commands-toolbar-fix.md",
+          "metadata": {
+            "modified": "2025-08-24T01:49:32.229412",
+            "type": ".md",
+            "ai_description": "Markdown documentation file",
+            "extracted_description": "",
+            "size_bytes": 5835,
+            "code_summary": "Sections: VS Code Commands and Toolbar F, Issues Identified and Fixed, Issue 1: Missing Chat Toolbar "
+          }
+        },
+        {
+          "name": "webview-ai-providers.md",
+          "path": "webview-ai-providers.md",
+          "metadata": {
+            "modified": "2025-08-24T00:46:37.482675",
+            "type": ".md",
+            "ai_description": "Markdown documentation file",
+            "extracted_description": "This document explains how the AI provider system works in UltraRepo, how provid",
+            "size_bytes": 10785,
+            "code_summary": "Sections: AI Providers System Documentat, Overview, File Structure"
+          }
+        },
+        {
+          "name": "webview-rebranding-success.md",
+          "path": "webview-rebranding-success.md",
+          "metadata": {
+            "modified": "2025-08-24T02:17:19.151776",
+            "type": ".md",
+            "ai_description": "Markdown documentation file",
+            "extracted_description": "",
+            "size_bytes": 1897,
+            "code_summary": "Sections: Webview Rebranding Success Sum, \u2705 **MAJOR SUCCESS: Chat Webvie, **Problem \u2192 Solution \u2192 Result*"
+          }
+        },
+        {
+          "name": "webview-welcome-ui.md",
+          "path": "webview-welcome-ui.md",
+          "metadata": {
+            "modified": "2025-08-24T00:41:15.311169",
+            "type": ".md",
+            "ai_description": "Markdown documentation file",
+            "extracted_description": "This document explains how to modify the KiloCode Welcome View UI, including tex",
+            "size_bytes": 7436,
+            "code_summary": "Sections: Welcome View UI Modification G, Overview, File Locations"
+          }
+        }
+      ],
+      "subfolders": [
+        ".git",
+        ".kilocode",
+        "build",
+        "rebrand",
+        "upstream"
+      ]
+    },
+    {
+      "folder": "rebrand",
+      "files": [
+        {
+          "name": "icon-prompt.md",
+          "path": "rebrand/icon-prompt.md",
+          "metadata": {
+            "modified": "2025-08-24T01:49:32.229390",
+            "type": ".md",
+            "ai_description": "Markdown documentation file",
+            "extracted_description": "You are tasked with ensuring that the UltraRepo (or KiloCode) VS Code extension ",
+            "size_bytes": 2137,
+            "code_summary": "Sections: AI Prompt: Debugging VS Code E, Debugging Steps, If the Icon Still Does Not Cha"
+          }
+        },
+        {
+          "name": "rebrand-scripts.md",
+          "path": "rebrand/rebrand-scripts.md",
+          "metadata": {
+            "modified": "2025-08-24T01:49:32.229396",
+            "type": ".md",
+            "ai_description": "Markdown documentation file",
+            "extracted_description": "This document explains how the rebranding scripts work in the UltraRepo/KiloCode",
+            "size_bytes": 6518,
+            "code_summary": "Sections: Rebrand Scripts for UltraRepo/, Overview, Complete Build Process"
+          }
+        },
+        {
+          "name": "refactor-kilocode-tasks.md",
+          "path": "rebrand/refactor-kilocode-tasks.md",
+          "metadata": {
+            "modified": "2025-08-24T01:49:32.229397",
+            "type": ".md",
+            "ai_description": "Markdown documentation file",
+            "extracted_description": "This document outlines the plan to completely rebrand the VS Code extension from",
+            "size_bytes": 5929,
+            "code_summary": "Sections: UltraRepo Command Refactoring , Overview, Current Issues"
+          }
+        }
+      ],
+      "subfolders": [
+        "assets",
+        "kilocode",
+        "reposchema",
+        "scripts"
+      ]
+    },
+    {
+      "folder": "rebrand/reposchema",
+      "files": [
+        {
+          "name": ".repoignore",
+          "path": "rebrand/reposchema/.repoignore",
+          "metadata": {
+            "modified": "2025-09-04T17:39:08.269588",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "",
+            "size_bytes": 2271,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "README.md",
+          "path": "rebrand/reposchema/README.md",
+          "metadata": {
+            "modified": "2025-09-04T16:24:03.808724",
+            "type": ".md",
+            "ai_description": "Project documentation and overview",
+            "extracted_description": "A Python application that generates comprehensive knowledge graphs and schemas f",
+            "size_bytes": 8109,
+            "code_summary": "Sections: Repository Schema Generator (r, Overview, Features"
+          }
+        },
+        {
+          "name": "repo-schema.py",
+          "path": "rebrand/reposchema/repo-schema.py",
+          "metadata": {
+            "modified": "2025-09-04T17:52:38.987093",
+            "type": ".py",
+            "ai_description": "Python source code file",
+            "extracted_description": "import os",
+            "size_bytes": 44909,
+            "code_summary": "Imports: os, json, re | Functions: debug_print, load_gitignore_patterns, is_git_path"
+          }
+        },
+        {
+          "name": "requirements.txt",
+          "path": "rebrand/reposchema/requirements.txt",
+          "metadata": {
+            "modified": "2025-09-04T16:57:23.940434",
+            "type": ".txt",
+            "ai_description": "Python package dependencies file",
+            "extracted_description": "pathspec>=0.12.1          # Gitignore pattern matching",
+            "size_bytes": 584,
+            "code_summary": "Sections: Minimal requirements.txt for C, Based on actual usage analysis, Core functionality (currently "
+          }
+        }
+      ],
+      "subfolders": [
+        "log",
+        "output",
+        "scripts",
+        "utils",
+        "venv"
+      ]
+    },
+    {
+      "folder": "rebrand/reposchema/output/schemas",
+      "files": [
+        {
+          "name": "repo-schema.json",
+          "path": "rebrand/reposchema/output/schemas/repo-schema.json",
+          "metadata": {
+            "modified": "2025-09-04T17:42:40.081170",
+            "type": ".json",
+            "ai_description": "JSON configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 94429,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "repo-schema.md",
+          "path": "rebrand/reposchema/output/schemas/repo-schema.md",
+          "metadata": {
+            "modified": "2025-09-04T17:42:40.083052",
+            "type": ".md",
+            "ai_description": "Markdown documentation file",
+            "extracted_description": "Scanned Path: /Users/jetstart/dev/ultrarepo/code",
+            "size_bytes": 53928,
+            "code_summary": "Sections: code v1.0, Project Structure with Details"
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": "rebrand/reposchema/utils",
+      "files": [
+        {
+          "name": "qdrant_client.py",
+          "path": "rebrand/reposchema/utils/qdrant_client.py",
+          "metadata": {
+            "modified": "2025-09-04T17:15:33.535168",
+            "type": ".py",
+            "ai_description": "Python source code file",
+            "extracted_description": "\"\"\"",
+            "size_bytes": 9437,
+            "code_summary": "Imports: os, json, hashlib | Functions: __init__, generate_collection_name, collection_exists | Classes: QdrantManager"
+          }
+        },
+        {
+          "name": "venv_manager.py",
+          "path": "rebrand/reposchema/utils/venv_manager.py",
+          "metadata": {
+            "modified": "2025-09-04T16:24:54.403173",
+            "type": ".py",
+            "ai_description": "Python source code file",
+            "extracted_description": "\"\"\"",
+            "size_bytes": 6114,
+            "code_summary": "Imports: os, sys, subprocess | Functions: __init__, is_venv_active, get_venv_python_path | Classes: VENVManager"
+          }
+        }
+      ],
+      "subfolders": [
+        "__pycache__"
+      ]
+    },
+    {
+      "folder": "rebrand/reposchema/scripts",
+      "files": [
+        {
+          "name": "setup_venv.sh",
+          "path": "rebrand/reposchema/scripts/setup_venv.sh",
+          "metadata": {
+            "modified": "2025-09-04T16:25:18.041101",
+            "type": ".sh",
+            "ai_description": "Shell script file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 2303,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "validate_setup.sh",
+          "path": "rebrand/reposchema/scripts/validate_setup.sh",
+          "metadata": {
+            "modified": "2025-09-04T16:25:30.826367",
+            "type": ".sh",
+            "ai_description": "Shell script file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 3905,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": "rebrand/kilocode",
+      "files": [
+        {
+          "name": "README.md",
+          "path": "rebrand/kilocode/README.md",
+          "metadata": {
+            "modified": "2025-08-24T00:20:14.295839",
+            "type": ".md",
+            "ai_description": "Project documentation and overview",
+            "extracted_description": "<p align=\"center\">",
+            "size_bytes": 2155,
+            "code_summary": "Sections: UltraRepo AI Coder Benefits, UltraRepo AI Coder Features, How to get started with UltraR"
+          }
+        }
+      ],
+      "subfolders": [
+        "src",
+        "webview-ui"
+      ]
+    },
+    {
+      "folder": "rebrand/kilocode/webview-ui/src/components/settings",
+      "files": [
+        {
+          "name": "constants.ts",
+          "path": "rebrand/kilocode/webview-ui/src/components/settings/constants.ts",
+          "metadata": {
+            "modified": "2025-08-24T00:41:15.311313",
+            "type": ".ts",
+            "ai_description": "TypeScript source code file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 2936,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": "rebrand/kilocode/webview-ui/src/components/kilocode/common",
+      "files": [
+        {
+          "name": "KiloCodeAuth.tsx",
+          "path": "rebrand/kilocode/webview-ui/src/components/kilocode/common/KiloCodeAuth.tsx",
+          "metadata": {
+            "modified": "2025-08-31T17:55:43.720698",
+            "type": ".tsx",
+            "ai_description": "React TypeScript component file",
+            "extracted_description": "import React from \"react\"",
+            "size_bytes": 1629,
+            "code_summary": "Imports: react, ./ButtonLink, ./ButtonSecondary | Functions: React.FC<KiloCodeAuthProps>"
+          }
+        },
+        {
+          "name": "Logo.tsx",
+          "path": "rebrand/kilocode/webview-ui/src/components/kilocode/common/Logo.tsx",
+          "metadata": {
+            "modified": "2025-08-23T23:40:16.361064",
+            "type": ".tsx",
+            "ai_description": "React TypeScript component file",
+            "extracted_description": "export default function Logo({ width = 100, height = 100 }: { width?: number; he",
+            "size_bytes": 1642,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": "rebrand/kilocode/webview-ui/src/components/welcome",
+      "files": [
+        {
+          "name": "RooHero.tsx",
+          "path": "rebrand/kilocode/webview-ui/src/components/welcome/RooHero.tsx",
+          "metadata": {
+            "modified": "2025-08-23T22:29:10.610833",
+            "type": ".tsx",
+            "ai_description": "React TypeScript component file",
+            "extracted_description": "import { useState } from \"react\"",
+            "size_bytes": 759,
+            "code_summary": "Imports: react | Functions: RooHero, [imagesBaseUri]"
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": "rebrand/kilocode/webview-ui/src/i18n/locales/en",
+      "files": [
+        {
+          "name": "kilocode.json",
+          "path": "rebrand/kilocode/webview-ui/src/i18n/locales/en/kilocode.json",
+          "metadata": {
+            "modified": "2025-08-23T23:24:29.252569",
+            "type": ".json",
+            "ai_description": "JSON configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 10587,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "settings.json",
+          "path": "rebrand/kilocode/webview-ui/src/i18n/locales/en/settings.json",
+          "metadata": {
+            "modified": "2025-08-31T17:55:43.720690",
+            "type": ".json",
+            "ai_description": "JSON configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 46485,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": "rebrand/kilocode/src",
+      "files": [
+        {
+          "name": "package.json",
+          "path": "rebrand/kilocode/src/package.json",
+          "metadata": {
+            "modified": "2025-08-24T01:15:15.324636",
+            "type": ".json",
+            "ai_description": "Node.js package configuration and dependencies",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 22662,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "package.nls.json",
+          "path": "rebrand/kilocode/src/package.nls.json",
+          "metadata": {
+            "modified": "2025-08-24T02:03:39.817062",
+            "type": ".json",
+            "ai_description": "JSON configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 4336,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": "rebrand/scripts",
+      "files": [
+        {
+          "name": "build-ultrarepo-complete.sh",
+          "path": "rebrand/scripts/build-ultrarepo-complete.sh",
+          "metadata": {
+            "modified": "2025-08-24T03:51:01.715403",
+            "type": ".sh",
+            "ai_description": "Shell script file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 3407,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "disable-telemetry.js",
+          "path": "rebrand/scripts/disable-telemetry.js",
+          "metadata": {
+            "modified": "2025-08-23T12:04:59.340162",
+            "type": ".js",
+            "ai_description": "JavaScript source code file",
+            "extracted_description": "",
+            "size_bytes": 1565,
+            "code_summary": "Imports: fs, path"
+          }
+        },
+        {
+          "name": "icon-rebrand.sh",
+          "path": "rebrand/scripts/icon-rebrand.sh",
+          "metadata": {
+            "modified": "2025-08-23T19:06:49.288998",
+            "type": ".sh",
+            "ai_description": "Shell script file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 1798,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "patch-nls-ultrarepo-proper.sh",
+          "path": "rebrand/scripts/patch-nls-ultrarepo-proper.sh",
+          "metadata": {
+            "modified": "2025-08-23T19:47:16.631753",
+            "type": ".sh",
+            "ai_description": "Shell script file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 1041,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "rebrand-webviews.sh",
+          "path": "rebrand/scripts/rebrand-webviews.sh",
+          "metadata": {
+            "modified": "2025-08-24T03:52:58.881790",
+            "type": ".sh",
+            "ai_description": "Shell script file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 2429,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": "rebrand/assets/icons",
+      "files": [
+        {
+          "name": "kilocode-icons-ultrarepo.md",
+          "path": "rebrand/assets/icons/kilocode-icons-ultrarepo.md",
+          "metadata": {
+            "modified": "2025-08-23T12:42:54.455210",
+            "type": ".md",
+            "ai_description": "Markdown documentation file",
+            "extracted_description": "| KiloCode Icon Name            | Used In File(s) & Line(s)                     ",
+            "size_bytes": 2977,
+            "code_summary": "Sections: KiloCode to UltraRepo Icon Reb"
+          }
+        },
+        {
+          "name": "kilocode-icons.md",
+          "path": "rebrand/assets/icons/kilocode-icons.md",
+          "metadata": {
+            "modified": "2025-08-23T12:30:44.497249",
+            "type": ".md",
+            "ai_description": "Markdown documentation file",
+            "extracted_description": "| Icon File Name                | Used In File(s) & Line(s)                     ",
+            "size_bytes": 2142,
+            "code_summary": "Sections: KiloCode Extension: Icon Usage"
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".kilocode",
+      "files": [
+        {
+          "name": "mcp.json",
+          "path": ".kilocode/mcp.json",
+          "metadata": {
+            "modified": "2025-09-04T15:50:32.611209",
+            "type": ".json",
+            "ai_description": "JSON configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 705,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git",
+      "files": [
+        {
+          "name": "COMMIT_EDITMSG",
+          "path": ".git/COMMIT_EDITMSG",
+          "metadata": {
+            "modified": "2025-08-24T03:55:51.954436",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "Clean up rebrand scripts and fix backup file creation",
+            "size_bytes": 864,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "config",
+          "path": ".git/config",
+          "metadata": {
+            "modified": "2025-08-23T21:15:41.561297",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "[core]",
+            "size_bytes": 443,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "description",
+          "path": ".git/description",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.190110",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "Unnamed repository; edit this file 'description' to name the repository.",
+            "size_bytes": 73,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "HEAD",
+          "path": ".git/HEAD",
+          "metadata": {
+            "modified": "2025-08-23T21:15:22.479189",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "ref: refs/heads/main",
+            "size_bytes": 21,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "index",
+          "path": ".git/index",
+          "metadata": {
+            "modified": "2025-09-04T13:49:42.825429",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 5403,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": [
+        "hooks",
+        "info",
+        "logs",
+        "modules",
+        "objects",
+        "refs"
+      ]
+    },
+    {
+      "folder": ".git/objects/95",
+      "files": [
+        {
+          "name": "0dd69f5f3ade79108ed18d654d77ab60350794",
+          "path": ".git/objects/95/0dd69f5f3ade79108ed18d654d77ab60350794",
+          "metadata": {
+            "modified": "2025-08-24T00:52:41.775615",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 694,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/0c",
+      "files": [
+        {
+          "name": "783a2ece0fd558b927f53fed1988d592c92326",
+          "path": ".git/objects/0c/783a2ece0fd558b927f53fed1988d592c92326",
+          "metadata": {
+            "modified": "2025-08-24T01:54:40.577458",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 4950,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/66",
+      "files": [
+        {
+          "name": "d3d2373c0216c5bea7f2a6b5aaaf6d0857b1dc",
+          "path": ".git/objects/66/d3d2373c0216c5bea7f2a6b5aaaf6d0857b1dc",
+          "metadata": {
+            "modified": "2025-08-24T00:53:03.691876",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 57,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/3e",
+      "files": [
+        {
+          "name": "ab13d7e24b7fd443219094fd139e4c16bbd728",
+          "path": ".git/objects/3e/ab13d7e24b7fd443219094fd139e4c16bbd728",
+          "metadata": {
+            "modified": "2025-08-23T21:14:52.825188",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 1342,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/68",
+      "files": [
+        {
+          "name": "325815b32aa32f1c4d43fb636b28ae2debba82",
+          "path": ".git/objects/68/325815b32aa32f1c4d43fb636b28ae2debba82",
+          "metadata": {
+            "modified": "2025-08-24T00:53:03.694537",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 280,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/6f",
+      "files": [
+        {
+          "name": "ae91335e42ef8b6a55c2f0052557ea28e53993",
+          "path": ".git/objects/6f/ae91335e42ef8b6a55c2f0052557ea28e53993",
+          "metadata": {
+            "modified": "2025-08-23T11:46:27.301206",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 90,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/9b",
+      "files": [
+        {
+          "name": "fdd8133f683f95f048d6bdf83bac869de2d579",
+          "path": ".git/objects/9b/fdd8133f683f95f048d6bdf83bac869de2d579",
+          "metadata": {
+            "modified": "2025-08-24T00:53:03.692368",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 115,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/9e",
+      "files": [
+        {
+          "name": "09e08a1f6062bae41d8b66e97aeb8b5b32609e",
+          "path": ".git/objects/9e/09e08a1f6062bae41d8b66e97aeb8b5b32609e",
+          "metadata": {
+            "modified": "2025-08-24T01:55:06.488217",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 57,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/04",
+      "files": [
+        {
+          "name": "512fdeab57a0a56b665b5b49d828aa12f91549",
+          "path": ".git/objects/04/512fdeab57a0a56b665b5b49d828aa12f91549",
+          "metadata": {
+            "modified": "2025-08-24T02:25:55.168195",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 45,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/32",
+      "files": [
+        {
+          "name": "3d77787f138524fc793b63945014d2678d9c8d",
+          "path": ".git/objects/32/3d77787f138524fc793b63945014d2678d9c8d",
+          "metadata": {
+            "modified": "2025-08-23T21:14:52.826412",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 1357,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/69",
+      "files": [
+        {
+          "name": "33e868695464f399439d73e45e09661158b8a0",
+          "path": ".git/objects/69/33e868695464f399439d73e45e09661158b8a0",
+          "metadata": {
+            "modified": "2025-08-24T00:53:03.693865",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 91,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/56",
+      "files": [
+        {
+          "name": "510ed9234fd170f26b716bcb452603cca5979d",
+          "path": ".git/objects/56/510ed9234fd170f26b716bcb452603cca5979d",
+          "metadata": {
+            "modified": "2025-08-24T00:53:03.693103",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 50,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/3d",
+      "files": [
+        {
+          "name": "630ef4928617aff405f437e20b243fd6317bcb",
+          "path": ".git/objects/3d/630ef4928617aff405f437e20b243fd6317bcb",
+          "metadata": {
+            "modified": "2025-08-24T01:55:06.491446",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 281,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/93",
+      "files": [
+        {
+          "name": "912330a4cd9c1342deaca20f16b0ae1306a82c",
+          "path": ".git/objects/93/912330a4cd9c1342deaca20f16b0ae1306a82c",
+          "metadata": {
+            "modified": "2025-08-24T00:53:03.693606",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 45,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/60",
+      "files": [
+        {
+          "name": "8f44cb1b91cdfb362d9491978843e3ca4bf3b6",
+          "path": ".git/objects/60/8f44cb1b91cdfb362d9491978843e3ca4bf3b6",
+          "metadata": {
+            "modified": "2025-08-24T03:55:31.784780",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 6700,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/5a",
+      "files": [
+        {
+          "name": "b3102c016b26cf601afe85f1f728f13f1538a3",
+          "path": ".git/objects/5a/b3102c016b26cf601afe85f1f728f13f1538a3",
+          "metadata": {
+            "modified": "2025-08-24T03:55:31.784192",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 4740,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "de609b9acced507f80f1c047c64697c483dfcb",
+          "path": ".git/objects/5a/de609b9acced507f80f1c047c64697c483dfcb",
+          "metadata": {
+            "modified": "2025-08-24T02:16:01.770232",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 1971,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/33",
+      "files": [
+        {
+          "name": "5568a232d721d488d1bcdfc1b577e91113301f",
+          "path": ".git/objects/33/5568a232d721d488d1bcdfc1b577e91113301f",
+          "metadata": {
+            "modified": "2025-08-24T02:16:33.259373",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 81,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/9c",
+      "files": [
+        {
+          "name": "8cf78d5fd3a110bc061948cec7786de11ce877",
+          "path": ".git/objects/9c/8cf78d5fd3a110bc061948cec7786de11ce877",
+          "metadata": {
+            "modified": "2025-08-24T01:55:06.490337",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 118,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/02",
+      "files": [
+        {
+          "name": "89aa0826038f81c6d2fa94b7a022c555a79475",
+          "path": ".git/objects/02/89aa0826038f81c6d2fa94b7a022c555a79475",
+          "metadata": {
+            "modified": "2025-08-24T00:52:41.776577",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 1039,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/a4",
+      "files": [
+        {
+          "name": "9323a739e1a0a6883759f5e00d422679b9dfd7",
+          "path": ".git/objects/a4/9323a739e1a0a6883759f5e00d422679b9dfd7",
+          "metadata": {
+            "modified": "2025-08-23T11:46:27.302005",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 145,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "a2cdcecc125560a252e3bc95595d763f871b72",
+          "path": ".git/objects/a4/a2cdcecc125560a252e3bc95595d763f871b72",
+          "metadata": {
+            "modified": "2025-08-24T03:55:31.782823",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 1402,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "ffd694fb9e1e214bcef9f5d03269b633eebf52",
+          "path": ".git/objects/a4/ffd694fb9e1e214bcef9f5d03269b633eebf52",
+          "metadata": {
+            "modified": "2025-08-24T02:16:33.259121",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 114,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/ac",
+      "files": [
+        {
+          "name": "b2f53f8ddf4a5c9b912f8da3f33b7e2427b013",
+          "path": ".git/objects/ac/b2f53f8ddf4a5c9b912f8da3f33b7e2427b013",
+          "metadata": {
+            "modified": "2025-08-24T00:52:41.772014",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 2392,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/d7",
+      "files": [
+        {
+          "name": "1432a509459741c61edc4e75c374af0ccacff6",
+          "path": ".git/objects/d7/1432a509459741c61edc4e75c374af0ccacff6",
+          "metadata": {
+            "modified": "2025-08-24T00:52:41.770459",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 6258,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/be",
+      "files": [
+        {
+          "name": "18b4319a98207f76234de9264a4d178d1a6a7d",
+          "path": ".git/objects/be/18b4319a98207f76234de9264a4d178d1a6a7d",
+          "metadata": {
+            "modified": "2025-08-24T01:55:06.489781",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 46,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "73e8483a06541685d711f18ee2f85f2d64e237",
+          "path": ".git/objects/be/73e8483a06541685d711f18ee2f85f2d64e237",
+          "metadata": {
+            "modified": "2025-08-24T02:16:33.260010",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 118,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "b3c1941bb688c0bbacd169b3beac7a04eaa950",
+          "path": ".git/objects/be/b3c1941bb688c0bbacd169b3beac7a04eaa950",
+          "metadata": {
+            "modified": "2025-08-24T01:55:06.489512",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 80,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/da",
+      "files": [
+        {
+          "name": "52115bc995895358b8b9e0934f05d577ba5c8f",
+          "path": ".git/objects/da/52115bc995895358b8b9e0934f05d577ba5c8f",
+          "metadata": {
+            "modified": "2025-08-24T00:53:03.690884",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 355,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/d1",
+      "files": [
+        {
+          "name": "483de36c9f6dbd0691d93f91d64c3d389c0fb6",
+          "path": ".git/objects/d1/483de36c9f6dbd0691d93f91d64c3d389c0fb6",
+          "metadata": {
+            "modified": "2025-08-24T00:53:03.691418",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 89,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "a0995d701fd319686d372321d5d95ba9f8ea7c",
+          "path": ".git/objects/d1/a0995d701fd319686d372321d5d95ba9f8ea7c",
+          "metadata": {
+            "modified": "2025-08-24T03:55:31.783726",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 2075,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/d6",
+      "files": [
+        {
+          "name": "edb1cc0201206c0825d7d3fd4af3f66315f84d",
+          "path": ".git/objects/d6/edb1cc0201206c0825d7d3fd4af3f66315f84d",
+          "metadata": {
+            "modified": "2025-08-24T02:16:33.259625",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 45,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/ab",
+      "files": [
+        {
+          "name": "08093cacb77009d028b7f8fb54cd8711773e56",
+          "path": ".git/objects/ab/08093cacb77009d028b7f8fb54cd8711773e56",
+          "metadata": {
+            "modified": "2025-08-24T01:55:06.489182",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 115,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/e2",
+      "files": [
+        {
+          "name": "00feccf336344e30f79f0abc55fd9a9d2af31b",
+          "path": ".git/objects/e2/00feccf336344e30f79f0abc55fd9a9d2af31b",
+          "metadata": {
+            "modified": "2025-08-24T02:25:55.168478",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 118,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/c7",
+      "files": [
+        {
+          "name": "2ca89488959b0bc14e8f9db03bfc0ae6a56231",
+          "path": ".git/objects/c7/2ca89488959b0bc14e8f9db03bfc0ae6a56231",
+          "metadata": {
+            "modified": "2025-08-24T00:53:03.692874",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 44,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/c0",
+      "files": [
+        {
+          "name": "968538642646dc1e78129d5c6cd355a510dc94",
+          "path": ".git/objects/c0/968538642646dc1e78129d5c6cd355a510dc94",
+          "metadata": {
+            "modified": "2025-08-24T02:25:55.167177",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 91,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/ee",
+      "files": [
+        {
+          "name": "863eb102b8ce715a26b34e6b6d46e14bae3059",
+          "path": ".git/objects/ee/863eb102b8ce715a26b34e6b6d46e14bae3059",
+          "metadata": {
+            "modified": "2025-08-24T03:55:51.953095",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 237,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/c9",
+      "files": [
+        {
+          "name": "116ef0081cabaa5c8ab5b981598b9e0757fa13",
+          "path": ".git/objects/c9/116ef0081cabaa5c8ab5b981598b9e0757fa13",
+          "metadata": {
+            "modified": "2025-08-24T02:25:55.169138",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 605,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/c1",
+      "files": [
+        {
+          "name": "4b257b8d0b6d9ef8efd40680fa4a60ede9fbdc",
+          "path": ".git/objects/c1/4b257b8d0b6d9ef8efd40680fa4a60ede9fbdc",
+          "metadata": {
+            "modified": "2025-08-24T00:52:41.773278",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 18380,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/c6",
+      "files": [
+        {
+          "name": "009a7bded8cdce72783c79830082e19a0659bd",
+          "path": ".git/objects/c6/009a7bded8cdce72783c79830082e19a0659bd",
+          "metadata": {
+            "modified": "2025-08-23T21:15:12.876843",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 272,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "e9464f8192d706fb5f8e44bb4fe728db065c9b",
+          "path": ".git/objects/c6/e9464f8192d706fb5f8e44bb4fe728db065c9b",
+          "metadata": {
+            "modified": "2025-08-24T03:55:51.954572",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 588,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/20",
+      "files": [
+        {
+          "name": "9fdc9550a7d4a6f44eab1b72396d1ad243da38",
+          "path": ".git/objects/20/9fdc9550a7d4a6f44eab1b72396d1ad243da38",
+          "metadata": {
+            "modified": "2025-08-24T01:55:06.490989",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 348,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/18",
+      "files": [
+        {
+          "name": "a5244cd3d0939c0d06971b7b2df2c20362b2d3",
+          "path": ".git/objects/18/a5244cd3d0939c0d06971b7b2df2c20362b2d3",
+          "metadata": {
+            "modified": "2025-08-24T02:16:01.769849",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 1641,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/4b",
+      "files": [
+        {
+          "name": "cc23a872e2b3492f91d3a4a17f5fdb8ff7a709",
+          "path": ".git/objects/4b/cc23a872e2b3492f91d3a4a17f5fdb8ff7a709",
+          "metadata": {
+            "modified": "2025-08-24T00:52:41.772436",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 1488,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/7d",
+      "files": [
+        {
+          "name": "87c817dd816e634c08640a3ef2118c6cfeb705",
+          "path": ".git/objects/7d/87c817dd816e634c08640a3ef2118c6cfeb705",
+          "metadata": {
+            "modified": "2025-08-23T21:14:52.828398",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 2064,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/42",
+      "files": [
+        {
+          "name": "a8395d44bcb050beed75e867356f03766fdf8b",
+          "path": ".git/objects/42/a8395d44bcb050beed75e867356f03766fdf8b",
+          "metadata": {
+            "modified": "2025-08-24T02:16:01.769383",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 687,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/73",
+      "files": [
+        {
+          "name": "c875aad0238849948c29643fcd84e64a611095",
+          "path": ".git/objects/73/c875aad0238849948c29643fcd84e64a611095",
+          "metadata": {
+            "modified": "2025-08-24T00:52:41.777421",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 4420,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/17",
+      "files": [
+        {
+          "name": "80fd5e53a2ce62e74af109ff81adae95665527",
+          "path": ".git/objects/17/80fd5e53a2ce62e74af109ff81adae95665527",
+          "metadata": {
+            "modified": "2025-08-24T00:53:03.696242",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 1001,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/8a",
+      "files": [
+        {
+          "name": "4b19a98d15a7222a4e6a3fc9b5dcca4c779571",
+          "path": ".git/objects/8a/4b19a98d15a7222a4e6a3fc9b5dcca4c779571",
+          "metadata": {
+            "modified": "2025-08-24T01:54:40.576462",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 4941,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/7e",
+      "files": [
+        {
+          "name": "00e13ba17c02df2d05ec74d3fc1e4242857a01",
+          "path": ".git/objects/7e/00e13ba17c02df2d05ec74d3fc1e4242857a01",
+          "metadata": {
+            "modified": "2025-08-24T00:53:03.692624",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 58,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/21",
+      "files": [
+        {
+          "name": "761d63e14b57966238a939bc61bf5f1c0517c6",
+          "path": ".git/objects/21/761d63e14b57966238a939bc61bf5f1c0517c6",
+          "metadata": {
+            "modified": "2025-08-23T21:14:52.828800",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 2533,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/75",
+      "files": [
+        {
+          "name": "c36f5415d47d13d992da2d780bb21f6dba2610",
+          "path": ".git/objects/75/c36f5415d47d13d992da2d780bb21f6dba2610",
+          "metadata": {
+            "modified": "2025-08-24T00:52:41.774967",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 8488,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/72",
+      "files": [
+        {
+          "name": "445d70d86bb3162e54c98e2d0dbcd5d30fab7c",
+          "path": ".git/objects/72/445d70d86bb3162e54c98e2d0dbcd5d30fab7c",
+          "metadata": {
+            "modified": "2025-08-23T21:18:32.330725",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 297,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/2a",
+      "files": [
+        {
+          "name": "29a9b715a9d555b67aff4ba4b41ce519115448",
+          "path": ".git/objects/2a/29a9b715a9d555b67aff4ba4b41ce519115448",
+          "metadata": {
+            "modified": "2025-08-23T21:14:52.826964",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 719,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/07",
+      "files": [
+        {
+          "name": "02da53afa69d5f9d35b870871125e2730e5792",
+          "path": ".git/objects/07/02da53afa69d5f9d35b870871125e2730e5792",
+          "metadata": {
+            "modified": "2025-08-23T21:14:52.827236",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 773,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/9a",
+      "files": [
+        {
+          "name": "c3c4b589cc4d3951fc38d35891237e01f55d42",
+          "path": ".git/objects/9a/c3c4b589cc4d3951fc38d35891237e01f55d42",
+          "metadata": {
+            "modified": "2025-08-24T02:16:33.258892",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 48,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "f249cd62863714a3588182480027679094eb1a",
+          "path": ".git/objects/9a/f249cd62863714a3588182480027679094eb1a",
+          "metadata": {
+            "modified": "2025-08-24T00:53:03.692117",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 56,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/36",
+      "files": [
+        {
+          "name": "b4a8325005f9767a1d62477010cbc5d25807b6",
+          "path": ".git/objects/36/b4a8325005f9767a1d62477010cbc5d25807b6",
+          "metadata": {
+            "modified": "2025-08-23T21:14:52.824896",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 1034,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/5d",
+      "files": [
+        {
+          "name": "32d6d933b6f0cc1c3abcc4934c5adf32282cf8",
+          "path": ".git/objects/5d/32d6d933b6f0cc1c3abcc4934c5adf32282cf8",
+          "metadata": {
+            "modified": "2025-08-23T21:18:32.329765",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 265,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/91",
+      "files": [
+        {
+          "name": "049f785289f25d057cfc69917099b188eda1fa",
+          "path": ".git/objects/91/049f785289f25d057cfc69917099b188eda1fa",
+          "metadata": {
+            "modified": "2025-08-24T00:53:03.693342",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 81,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "d69fa7511a5caf4dc2be73411012fff100f0bd",
+          "path": ".git/objects/91/d69fa7511a5caf4dc2be73411012fff100f0bd",
+          "metadata": {
+            "modified": "2025-08-24T00:52:41.774308",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 11243,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/65",
+      "files": [
+        {
+          "name": "7638942fbd304a513ffdb0d8b1407263d5a6fe",
+          "path": ".git/objects/65/7638942fbd304a513ffdb0d8b1407263d5a6fe",
+          "metadata": {
+            "modified": "2025-08-24T00:53:03.691641",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 48,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/98",
+      "files": [
+        {
+          "name": "33b66580c8fee58b531544c8728aef7d786048",
+          "path": ".git/objects/98/33b66580c8fee58b531544c8728aef7d786048",
+          "metadata": {
+            "modified": "2025-08-24T02:25:55.167666",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 50,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "d0bd576c060c6ef8badc997b8a3b9c26d27404",
+          "path": ".git/objects/98/d0bd576c060c6ef8badc997b8a3b9c26d27404",
+          "metadata": {
+            "modified": "2025-08-24T00:52:41.777817",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 1144,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/08",
+      "files": [
+        {
+          "name": "04dac2c3d8d974c5d2f38e7821b0d7830f9f0f",
+          "path": ".git/objects/08/04dac2c3d8d974c5d2f38e7821b0d7830f9f0f",
+          "metadata": {
+            "modified": "2025-08-24T02:25:55.168795",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 281,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/01",
+      "files": [
+        {
+          "name": "2076f39254e54f5279672bb06641579c55b878",
+          "path": ".git/objects/01/2076f39254e54f5279672bb06641579c55b878",
+          "metadata": {
+            "modified": "2025-08-24T02:16:33.260533",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 572,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/39",
+      "files": [
+        {
+          "name": "346db437472b6ba2cb8b35680b5bb0be7eb2d9",
+          "path": ".git/objects/39/346db437472b6ba2cb8b35680b5bb0be7eb2d9",
+          "metadata": {
+            "modified": "2025-08-23T21:14:52.822679",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 741,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/99",
+      "files": [
+        {
+          "name": "27345514bcdd2c593e6b707059a61997f0bf4d",
+          "path": ".git/objects/99/27345514bcdd2c593e6b707059a61997f0bf4d",
+          "metadata": {
+            "modified": "2025-08-23T21:15:12.875943",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 54,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "cb1b4a4a92a407bf8530ccb531aeaff1a0c45c",
+          "path": ".git/objects/99/cb1b4a4a92a407bf8530ccb531aeaff1a0c45c",
+          "metadata": {
+            "modified": "2025-08-24T02:25:35.490103",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 16546,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/55",
+      "files": [
+        {
+          "name": "62283b04c42097e9d95894e544dc3fb9f9da0a",
+          "path": ".git/objects/55/62283b04c42097e9d95894e544dc3fb9f9da0a",
+          "metadata": {
+            "modified": "2025-08-23T21:14:52.826689",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 958,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "ddcf0760d92f5d3385678b861e435900fab132",
+          "path": ".git/objects/55/ddcf0760d92f5d3385678b861e435900fab132",
+          "metadata": {
+            "modified": "2025-08-24T00:52:41.773723",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 9617,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/0f",
+      "files": [
+        {
+          "name": "321e9a45226330d8c3bfe0778fcc544fb7c9ea",
+          "path": ".git/objects/0f/321e9a45226330d8c3bfe0778fcc544fb7c9ea",
+          "metadata": {
+            "modified": "2025-08-24T01:54:40.578317",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 2450,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/90",
+      "files": [
+        {
+          "name": "bb742f91d93b6960116fcba285190a06c6cc00",
+          "path": ".git/objects/90/bb742f91d93b6960116fcba285190a06c6cc00",
+          "metadata": {
+            "modified": "2025-08-24T00:52:41.771516",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 1111,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/d3",
+      "files": [
+        {
+          "name": "0a6c7455f5e1ba018e811dc5d3dd235fb5b0b9",
+          "path": ".git/objects/d3/0a6c7455f5e1ba018e811dc5d3dd235fb5b0b9",
+          "metadata": {
+            "modified": "2025-08-23T21:14:52.820969",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 620,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/ba",
+      "files": [
+        {
+          "name": "9c3d5e4f8bf669a43c79777d4c8262b50e5905",
+          "path": ".git/objects/ba/9c3d5e4f8bf669a43c79777d4c8262b50e5905",
+          "metadata": {
+            "modified": "2025-08-24T02:25:55.170421",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 994,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/a7",
+      "files": [
+        {
+          "name": "c6ca330a71e997a54105397ed372b1d0c23cbb",
+          "path": ".git/objects/a7/c6ca330a71e997a54105397ed372b1d0c23cbb",
+          "metadata": {
+            "modified": "2025-08-24T01:54:40.576968",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 690,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/b1",
+      "files": [
+        {
+          "name": "bc737fe1437117394dd6ef36ff9d5d715e94d6",
+          "path": ".git/objects/b1/bc737fe1437117394dd6ef36ff9d5d715e94d6",
+          "metadata": {
+            "modified": "2025-08-24T00:53:03.694939",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 370,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/b6",
+      "files": [
+        {
+          "name": "7735ce985c7a44072c80772844d64a052bfb28",
+          "path": ".git/objects/b6/7735ce985c7a44072c80772844d64a052bfb28",
+          "metadata": {
+            "modified": "2025-08-23T21:14:52.823431",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 745,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/d2",
+      "files": [
+        {
+          "name": "0b1101ae6680dd7e000999b1070b5b088662a2",
+          "path": ".git/objects/d2/0b1101ae6680dd7e000999b1070b5b088662a2",
+          "metadata": {
+            "modified": "2025-08-24T00:52:41.789257",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 534841,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/af",
+      "files": [
+        {
+          "name": "32aba8b9c40f958de258067ac1e897018be239",
+          "path": ".git/objects/af/32aba8b9c40f958de258067ac1e897018be239",
+          "metadata": {
+            "modified": "2025-08-24T02:25:55.167432",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 44,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "9b03b5bc452a23bdd9dce6f208f40b206ae23d",
+          "path": ".git/objects/af/9b03b5bc452a23bdd9dce6f208f40b206ae23d",
+          "metadata": {
+            "modified": "2025-08-24T03:55:51.953696",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 710,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/db",
+      "files": [
+        {
+          "name": "4e224fedd64ac4af668cc1c0b96853399088d8",
+          "path": ".git/objects/db/4e224fedd64ac4af668cc1c0b96853399088d8",
+          "metadata": {
+            "modified": "2025-08-23T21:15:12.875720",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 48,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/b0",
+      "files": [
+        {
+          "name": "1ecc7dd62f04398156a9fa08b97d6badb7a342",
+          "path": ".git/objects/b0/1ecc7dd62f04398156a9fa08b97d6badb7a342",
+          "metadata": {
+            "modified": "2025-08-24T01:55:06.491756",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 538,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/b9",
+      "files": [
+        {
+          "name": "0955086e2286a22b52137aa35cc619b9dc8ec2",
+          "path": ".git/objects/b9/0955086e2286a22b52137aa35cc619b9dc8ec2",
+          "metadata": {
+            "modified": "2025-08-24T00:52:41.776156",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 871,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/e1",
+      "files": [
+        {
+          "name": "ef6271e594f91a857330254fb05d4efefd95de",
+          "path": ".git/objects/e1/ef6271e594f91a857330254fb05d4efefd95de",
+          "metadata": {
+            "modified": "2025-08-24T01:54:40.577807",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 5193,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/cc",
+      "files": [
+        {
+          "name": "b305865e1c3e0d72c7e6248b1e003b7499bfa1",
+          "path": ".git/objects/cc/b305865e1c3e0d72c7e6248b1e003b7499bfa1",
+          "metadata": {
+            "modified": "2025-08-24T02:16:33.258410",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 85,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/e6",
+      "files": [
+        {
+          "name": "67a6aed2a43152068828eccdf0e1e2ab1e08fb",
+          "path": ".git/objects/e6/67a6aed2a43152068828eccdf0e1e2ab1e08fb",
+          "metadata": {
+            "modified": "2025-08-23T21:15:12.875416",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 247,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "9de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "path": ".git/objects/e6/9de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "metadata": {
+            "modified": "2025-08-24T03:55:31.783563",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 15,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/f0",
+      "files": [
+        {
+          "name": "634c469b1a4c6b1bd7540be381d71227313cbb",
+          "path": ".git/objects/f0/634c469b1a4c6b1bd7540be381d71227313cbb",
+          "metadata": {
+            "modified": "2025-08-23T21:14:52.823638",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 2592,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/f7",
+      "files": [
+        {
+          "name": "2ad7057d325d30a76b567ed78b86222ef6c7e6",
+          "path": ".git/objects/f7/2ad7057d325d30a76b567ed78b86222ef6c7e6",
+          "metadata": {
+            "modified": "2025-08-24T02:16:33.258685",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 89,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/ff",
+      "files": [
+        {
+          "name": "0cba5c3a4aaecdc3868655146b67cec6fd43db",
+          "path": ".git/objects/ff/0cba5c3a4aaecdc3868655146b67cec6fd43db",
+          "metadata": {
+            "modified": "2025-08-23T21:14:52.828095",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 1679,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "8ec2587479812f86fe051c17c67e2602a3e812",
+          "path": ".git/objects/ff/8ec2587479812f86fe051c17c67e2602a3e812",
+          "metadata": {
+            "modified": "2025-08-24T00:53:03.694184",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 433,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/c5",
+      "files": [
+        {
+          "name": "75e044af57129d80851906f27365e69347faf6",
+          "path": ".git/objects/c5/75e044af57129d80851906f27365e69347faf6",
+          "metadata": {
+            "modified": "2025-08-23T21:14:52.843120",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 846436,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/c2",
+      "files": [
+        {
+          "name": "02527afb7e4c7c8ff7ca1bb5f53adb16af924e",
+          "path": ".git/objects/c2/02527afb7e4c7c8ff7ca1bb5f53adb16af924e",
+          "metadata": {
+            "modified": "2025-08-24T02:25:35.490487",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 988,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/e9",
+      "files": [
+        {
+          "name": "f60970c2e34533887ef2dd93457972fc7198cf",
+          "path": ".git/objects/e9/f60970c2e34533887ef2dd93457972fc7198cf",
+          "metadata": {
+            "modified": "2025-08-24T01:55:06.488529",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 90,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/f1",
+      "files": [
+        {
+          "name": "1f8173b8f13cc65af61c586787666dd80be92f",
+          "path": ".git/objects/f1/1f8173b8f13cc65af61c586787666dd80be92f",
+          "metadata": {
+            "modified": "2025-08-24T00:52:41.776939",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 426,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/e7",
+      "files": [
+        {
+          "name": "624a8ceb94b970a8c9aa0327aa9c32ac129371",
+          "path": ".git/objects/e7/624a8ceb94b970a8c9aa0327aa9c32ac129371",
+          "metadata": {
+            "modified": "2025-08-24T00:52:41.771084",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 3182,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/ce",
+      "files": [
+        {
+          "name": "6d5f38daa9722261feae1f5a7a184a1d6f0d42",
+          "path": ".git/objects/ce/6d5f38daa9722261feae1f5a7a184a1d6f0d42",
+          "metadata": {
+            "modified": "2025-08-23T21:15:12.876236",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 402,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/e0",
+      "files": [
+        {
+          "name": "5f35c108dbe5d878339edf074970d2246f3827",
+          "path": ".git/objects/e0/5f35c108dbe5d878339edf074970d2246f3827",
+          "metadata": {
+            "modified": "2025-08-24T00:52:41.790140",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 2850,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/46",
+      "files": [
+        {
+          "name": "464ae74d1c731f39a66006b76c358bad2a4897",
+          "path": ".git/objects/46/464ae74d1c731f39a66006b76c358bad2a4897",
+          "metadata": {
+            "modified": "2025-08-23T21:14:52.820807",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 95,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "ef518762ef5e70bb4e9b3607bde393cebe6845",
+          "path": ".git/objects/46/ef518762ef5e70bb4e9b3607bde393cebe6845",
+          "metadata": {
+            "modified": "2025-08-23T21:14:52.827496",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 510,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/41",
+      "files": [
+        {
+          "name": "2f7e587a4df9a84288f766dc181ae33b995d96",
+          "path": ".git/objects/41/2f7e587a4df9a84288f766dc181ae33b995d96",
+          "metadata": {
+            "modified": "2025-08-23T21:14:52.825811",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 2371,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/83",
+      "files": [
+        {
+          "name": "0d73f14383af1ee16a8bf994d87f6cd660aadb",
+          "path": ".git/objects/83/0d73f14383af1ee16a8bf994d87f6cd660aadb",
+          "metadata": {
+            "modified": "2025-08-24T02:25:55.167919",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 81,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/1b",
+      "files": [
+        {
+          "name": "225944f1fa58965d4475a05101b7de124f17eb",
+          "path": ".git/objects/1b/225944f1fa58965d4475a05101b7de124f17eb",
+          "metadata": {
+            "modified": "2025-08-23T21:14:52.823179",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 928,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/77",
+      "files": [
+        {
+          "name": "d778f18ca356d3f586c18d6bfea24546984015",
+          "path": ".git/objects/77/d778f18ca356d3f586c18d6bfea24546984015",
+          "metadata": {
+            "modified": "2025-08-23T21:15:12.876553",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 280,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/48",
+      "files": [
+        {
+          "name": "0d4339d7a9d1ba9a2edff439319ae572bbdcb1",
+          "path": ".git/objects/48/0d4339d7a9d1ba9a2edff439319ae572bbdcb1",
+          "metadata": {
+            "modified": "2025-08-24T02:16:33.260253",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 281,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "c5cfac6633a340bd110b709eaa9446fb994096",
+          "path": ".git/objects/48/c5cfac6633a340bd110b709eaa9446fb994096",
+          "metadata": {
+            "modified": "2025-08-24T00:53:03.691184",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 47,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/70",
+      "files": [
+        {
+          "name": "84251150ec593a2a2142c9491765ebb8ec65b7",
+          "path": ".git/objects/70/84251150ec593a2a2142c9491765ebb8ec65b7",
+          "metadata": {
+            "modified": "2025-08-23T21:14:52.826112",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 1785,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/4a",
+      "files": [
+        {
+          "name": "449c34d4036116fe913998c4cf2d2b5cb6e136",
+          "path": ".git/objects/4a/449c34d4036116fe913998c4cf2d2b5cb6e136",
+          "metadata": {
+            "modified": "2025-08-23T21:14:52.822147",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 2198,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "f3b5ccac0da1ad3659144c9ad5207bbc56fd9a",
+          "path": ".git/objects/4a/f3b5ccac0da1ad3659144c9ad5207bbc56fd9a",
+          "metadata": {
+            "modified": "2025-08-23T11:46:27.300910",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 51,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/8c",
+      "files": [
+        {
+          "name": "5b0e928e9f3b1839791723bf0df35338969fd0",
+          "path": ".git/objects/8c/5b0e928e9f3b1839791723bf0df35338969fd0",
+          "metadata": {
+            "modified": "2025-08-24T03:55:51.953402",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 231,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/1d",
+      "files": [
+        {
+          "name": "683462edf1491aac0e9ed851b5f9e1f08672c3",
+          "path": ".git/objects/1d/683462edf1491aac0e9ed851b5f9e1f08672c3",
+          "metadata": {
+            "modified": "2025-08-23T21:14:52.821368",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 716,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "cba8503d2f900083ecacecf5a3fb0e61dc811f",
+          "path": ".git/objects/1d/cba8503d2f900083ecacecf5a3fb0e61dc811f",
+          "metadata": {
+            "modified": "2025-08-24T00:52:41.789756",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 3899,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/1c",
+      "files": [
+        {
+          "name": "1ca915c2868d3865e0be1274897176818257be",
+          "path": ".git/objects/1c/1ca915c2868d3865e0be1274897176818257be",
+          "metadata": {
+            "modified": "2025-08-24T01:55:06.492907",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 1164,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/40",
+      "files": [
+        {
+          "name": "8ebf70a997c25d495621c617d6b3de3cb0c319",
+          "path": ".git/objects/40/8ebf70a997c25d495621c617d6b3de3cb0c319",
+          "metadata": {
+            "modified": "2025-08-23T21:14:52.825484",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 767,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "970eecc14df371278be473abddbf7f6c4f55a0",
+          "path": ".git/objects/40/970eecc14df371278be473abddbf7f6c4f55a0",
+          "metadata": {
+            "modified": "2025-08-24T03:55:31.783282",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 1143,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/7f",
+      "files": [
+        {
+          "name": "a72fbd4acbf78b3790d396c8263d4caabb88fd",
+          "path": ".git/objects/7f/a72fbd4acbf78b3790d396c8263d4caabb88fd",
+          "metadata": {
+            "modified": "2025-08-24T01:55:06.488874",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 48,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/7a",
+      "files": [
+        {
+          "name": "752a3fe26b1970ca416a1d231fca2137d2841c",
+          "path": ".git/objects/7a/752a3fe26b1970ca416a1d231fca2137d2841c",
+          "metadata": {
+            "modified": "2025-08-23T21:15:12.877750",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 798,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/objects/8e",
+      "files": [
+        {
+          "name": "41e8648c0a1d90001489e82629f349d78971c0",
+          "path": ".git/objects/8e/41e8648c0a1d90001489e82629f349d78971c0",
+          "metadata": {
+            "modified": "2025-08-24T02:16:33.261527",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 959,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/info",
+      "files": [
+        {
+          "name": "exclude",
+          "path": ".git/info/exclude",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.189940",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "",
+            "size_bytes": 240,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/hooks",
+      "files": [
+        {
+          "name": "applypatch-msg.sample",
+          "path": ".git/hooks/applypatch-msg.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.190856",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "",
+            "size_bytes": 478,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "commit-msg.sample",
+          "path": ".git/hooks/commit-msg.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.190411",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "",
+            "size_bytes": 896,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "fsmonitor-watchman.sample",
+          "path": ".git/hooks/fsmonitor-watchman.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.191113",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "use strict;",
+            "size_bytes": 4726,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "post-update.sample",
+          "path": ".git/hooks/post-update.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.191389",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "",
+            "size_bytes": 189,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "pre-applypatch.sample",
+          "path": ".git/hooks/pre-applypatch.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.191569",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "",
+            "size_bytes": 424,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "pre-commit.sample",
+          "path": ".git/hooks/pre-commit.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.190756",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "",
+            "size_bytes": 1643,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "pre-merge-commit.sample",
+          "path": ".git/hooks/pre-merge-commit.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.191477",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "",
+            "size_bytes": 416,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "pre-push.sample",
+          "path": ".git/hooks/pre-push.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.191664",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "",
+            "size_bytes": 1374,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "pre-rebase.sample",
+          "path": ".git/hooks/pre-rebase.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.190656",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "",
+            "size_bytes": 4898,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "pre-receive.sample",
+          "path": ".git/hooks/pre-receive.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.191207",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "",
+            "size_bytes": 544,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "prepare-commit-msg.sample",
+          "path": ".git/hooks/prepare-commit-msg.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.191297",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "",
+            "size_bytes": 1492,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "push-to-checkout.sample",
+          "path": ".git/hooks/push-to-checkout.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.191853",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "",
+            "size_bytes": 2783,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "update.sample",
+          "path": ".git/hooks/update.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.191758",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "",
+            "size_bytes": 3650,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/refs/heads",
+      "files": [
+        {
+          "name": "main",
+          "path": ".git/refs/heads/main",
+          "metadata": {
+            "modified": "2025-08-24T03:55:51.954892",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "c6e9464f8192d706fb5f8e44bb4fe728db065c9b",
+            "size_bytes": 41,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/refs/remotes/origin",
+      "files": [
+        {
+          "name": "main",
+          "path": ".git/refs/remotes/origin/main",
+          "metadata": {
+            "modified": "2025-08-24T03:55:59.149374",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "c6e9464f8192d706fb5f8e44bb4fe728db065c9b",
+            "size_bytes": 41,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/modules/upstream/kilocode",
+      "files": [
+        {
+          "name": "config",
+          "path": ".git/modules/upstream/kilocode/config",
+          "metadata": {
+            "modified": "2025-08-24T03:59:24.553831",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "[core]",
+            "size_bytes": 434,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "description",
+          "path": ".git/modules/upstream/kilocode/description",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.269275",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "Unnamed repository; edit this file 'description' to name the repository.",
+            "size_bytes": 73,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "HEAD",
+          "path": ".git/modules/upstream/kilocode/HEAD",
+          "metadata": {
+            "modified": "2025-08-23T11:46:25.606151",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "ref: refs/heads/main",
+            "size_bytes": 21,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "index",
+          "path": ".git/modules/upstream/kilocode/index",
+          "metadata": {
+            "modified": "2025-08-23T11:46:27.289147",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 250786,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "packed-refs",
+          "path": ".git/modules/upstream/kilocode/packed-refs",
+          "metadata": {
+            "modified": "2025-08-23T11:46:25.605234",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "15275e5348834ae071f192a3184cb5ad118e599f refs/remotes/origin/148-restore-docs-li",
+            "size_bytes": 20422,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": [
+        "hooks",
+        "info",
+        "lfs",
+        "logs",
+        "objects",
+        "refs"
+      ]
+    },
+    {
+      "folder": ".git/modules/upstream/kilocode/objects/pack",
+      "files": [
+        {
+          "name": "pack-eaa634620d7c70751e1f9682511627fa43cb91e0.idx",
+          "path": ".git/modules/upstream/kilocode/objects/pack/pack-eaa634620d7c70751e1f9682511627fa43cb91e0.idx",
+          "metadata": {
+            "modified": "2025-08-23T11:46:25.595422",
+            "type": ".idx",
+            "ai_description": "File with .idx extension",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 2776488,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "pack-eaa634620d7c70751e1f9682511627fa43cb91e0.pack",
+          "path": ".git/modules/upstream/kilocode/objects/pack/pack-eaa634620d7c70751e1f9682511627fa43cb91e0.pack",
+          "metadata": {
+            "modified": "2025-08-23T11:46:25.583899",
+            "type": ".pack",
+            "ai_description": "File with .pack extension",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 155918098,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/modules/upstream/kilocode/info",
+      "files": [
+        {
+          "name": "exclude",
+          "path": ".git/modules/upstream/kilocode/info/exclude",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.269214",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "",
+            "size_bytes": 240,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/modules/upstream/kilocode/hooks",
+      "files": [
+        {
+          "name": "applypatch-msg.sample",
+          "path": ".git/modules/upstream/kilocode/hooks/applypatch-msg.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.269583",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "",
+            "size_bytes": 478,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "commit-msg.sample",
+          "path": ".git/modules/upstream/kilocode/hooks/commit-msg.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.269370",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "",
+            "size_bytes": 896,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "fsmonitor-watchman.sample",
+          "path": ".git/modules/upstream/kilocode/hooks/fsmonitor-watchman.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.269664",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "use strict;",
+            "size_bytes": 4726,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "post-checkout",
+          "path": ".git/modules/upstream/kilocode/hooks/post-checkout",
+          "metadata": {
+            "modified": "2025-08-23T11:46:25.842294",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "command -v git-lfs >/dev/null 2>&1 || { printf >&2 \"\\n%s\\n\\n\" \"This repository i",
+            "size_bytes": 360,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "post-commit",
+          "path": ".git/modules/upstream/kilocode/hooks/post-commit",
+          "metadata": {
+            "modified": "2025-08-23T11:46:25.842352",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "command -v git-lfs >/dev/null 2>&1 || { printf >&2 \"\\n%s\\n\\n\" \"This repository i",
+            "size_bytes": 356,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "post-merge",
+          "path": ".git/modules/upstream/kilocode/hooks/post-merge",
+          "metadata": {
+            "modified": "2025-08-23T11:46:25.842409",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "command -v git-lfs >/dev/null 2>&1 || { printf >&2 \"\\n%s\\n\\n\" \"This repository i",
+            "size_bytes": 354,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "post-update.sample",
+          "path": ".git/modules/upstream/kilocode/hooks/post-update.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.269832",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "",
+            "size_bytes": 189,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "pre-applypatch.sample",
+          "path": ".git/modules/upstream/kilocode/hooks/pre-applypatch.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.269947",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "",
+            "size_bytes": 424,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "pre-commit.sample",
+          "path": ".git/modules/upstream/kilocode/hooks/pre-commit.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.269520",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "",
+            "size_bytes": 1643,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "pre-merge-commit.sample",
+          "path": ".git/modules/upstream/kilocode/hooks/pre-merge-commit.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.269895",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "",
+            "size_bytes": 416,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "pre-push",
+          "path": ".git/modules/upstream/kilocode/hooks/pre-push",
+          "metadata": {
+            "modified": "2025-08-23T11:46:25.842200",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "command -v git-lfs >/dev/null 2>&1 || { printf >&2 \"\\n%s\\n\\n\" \"This repository i",
+            "size_bytes": 350,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "pre-push.sample",
+          "path": ".git/modules/upstream/kilocode/hooks/pre-push.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.269999",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "",
+            "size_bytes": 1374,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "pre-rebase.sample",
+          "path": ".git/modules/upstream/kilocode/hooks/pre-rebase.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.269463",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "",
+            "size_bytes": 4898,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "pre-receive.sample",
+          "path": ".git/modules/upstream/kilocode/hooks/pre-receive.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.269720",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "",
+            "size_bytes": 544,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "prepare-commit-msg.sample",
+          "path": ".git/modules/upstream/kilocode/hooks/prepare-commit-msg.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.269774",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "",
+            "size_bytes": 1492,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "push-to-checkout.sample",
+          "path": ".git/modules/upstream/kilocode/hooks/push-to-checkout.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.270097",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "",
+            "size_bytes": 2783,
+            "code_summary": ""
+          }
+        },
+        {
+          "name": "update.sample",
+          "path": ".git/modules/upstream/kilocode/hooks/update.sample",
+          "metadata": {
+            "modified": "2025-08-23T11:46:09.270048",
+            "type": ".sample",
+            "ai_description": "File with .sample extension",
+            "extracted_description": "",
+            "size_bytes": 3650,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/modules/upstream/kilocode/refs/heads",
+      "files": [
+        {
+          "name": "main",
+          "path": ".git/modules/upstream/kilocode/refs/heads/main",
+          "metadata": {
+            "modified": "2025-08-23T11:46:25.606355",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "dd44e8c8c2d34e348cb4cf3e6f3219bcfb747ca0",
+            "size_bytes": 41,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/modules/upstream/kilocode/refs/remotes/origin",
+      "files": [
+        {
+          "name": "HEAD",
+          "path": ".git/modules/upstream/kilocode/refs/remotes/origin/HEAD",
+          "metadata": {
+            "modified": "2025-08-23T11:46:25.606042",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "ref: refs/remotes/origin/main",
+            "size_bytes": 30,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    },
+    {
+      "folder": ".git/modules/upstream/kilocode/lfs/objects/a2/7a",
+      "files": [
+        {
+          "name": "a27ab29e2b5cf8ae65efd35222d456de4b9b1956b159705f9ead3d19426fabae",
+          "path": ".git/modules/upstream/kilocode/lfs/objects/a2/7a/a27ab29e2b5cf8ae65efd35222d456de4b9b1956b159705f9ead3d19426fabae",
+          "metadata": {
+            "modified": "2025-08-23T11:46:26.951878",
+            "type": "",
+            "ai_description": "Configuration or data file",
+            "extracted_description": "(Binary file)",
+            "size_bytes": 7456839,
+            "code_summary": ""
+          }
+        }
+      ],
+      "subfolders": []
+    }
+  ],
+  "files_scanned": 242,
+  "files_processed": 217
+}

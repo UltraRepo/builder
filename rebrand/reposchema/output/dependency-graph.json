@@ -1,0 +1,470 @@
+{
+  "nodes": [
+    {
+      "file_path": ".repoignore",
+      "file_type": "",
+      "imports": [],
+      "exports": [],
+      "metadata": {
+        "modified": "2025-09-04T17:39:08.269588",
+        "type": "",
+        "ai_description": "Configuration or data file",
+        "extracted_description": "",
+        "size_bytes": 2271,
+        "code_summary": ""
+      }
+    },
+    {
+      "file_path": "README.md",
+      "file_type": ".md",
+      "imports": [],
+      "exports": [],
+      "metadata": {
+        "modified": "2025-09-04T20:34:16.574382",
+        "type": ".md",
+        "ai_description": "Project documentation and overview",
+        "extracted_description": "**Transform your codebase into an intelligent, searchable knowledge graph that A",
+        "size_bytes": 23925,
+        "code_summary": "Sections: Repository Schema Generator (r, AI-Optimized Codebase Indexing, \ud83d\udccb Summary"
+      }
+    },
+    {
+      "file_path": "repo-schema.py",
+      "file_type": ".py",
+      "imports": [
+        "mimetypes",
+        "signal",
+        "pathspec",
+        "utils.qdrant_client",
+        "utils.dependency_graph"
+      ],
+      "exports": [
+        "function:debug_print",
+        "function:load_gitignore_patterns",
+        "function:is_git_path",
+        "function:is_ignored",
+        "function:is_text_file",
+        "function:get_ai_description",
+        "function:extract_python_summary",
+        "function:extract_javascript_summary",
+        "function:extract_compiled_summary",
+        "function:extract_config_summary",
+        "function:extract_docs_summary",
+        "function:extract_go_summary",
+        "function:extract_rust_summary",
+        "function:extract_php_summary",
+        "function:get_file_metadata",
+        "function:generate_repo_schema",
+        "function:format_metadata",
+        "function:format_tree",
+        "function:build_tree_recursive",
+        "function:add_folder_entry",
+        "function:generate_markdown",
+        "function:run_schema_generation",
+        "function:signal_handler",
+        "function:main"
+      ],
+      "metadata": {
+        "modified": "2025-09-04T20:25:10.801908",
+        "type": ".py",
+        "ai_description": "Python source code file",
+        "extracted_description": "import os",
+        "size_bytes": 64764,
+        "code_summary": "Imports: os, json, re, sys, time | Functions: debug_print(2p), load_gitignore_patterns(2p), is_git_path(1p), is_ignored(3p) | Constants: QDRANT_AVAILABLE, QDRANT_AVAILABLE, DEPENDENCY_GRAPH_AVAILABLE | Async support | Executable | Script entry point"
+      }
+    },
+    {
+      "file_path": "requirements.txt",
+      "file_type": ".txt",
+      "imports": [],
+      "exports": [],
+      "metadata": {
+        "modified": "2025-09-04T20:25:55.277802",
+        "type": ".txt",
+        "ai_description": "Python package dependencies file",
+        "extracted_description": "pathspec>=0.12.1          # Gitignore pattern matching",
+        "size_bytes": 722,
+        "code_summary": "Sections: Minimal requirements.txt for C, Based on actual usage analysis, Core functionality (currently "
+      }
+    },
+    {
+      "file_path": "test_dependency_graph.py",
+      "file_type": ".py",
+      "imports": [
+        "unittest",
+        "unittest.mock",
+        "dependency_graph",
+        "utils",
+        "React",
+        "{",
+        "useEffect",
+        "helper",
+        "java.util.List;",
+        "java.util.Map;"
+      ],
+      "exports": [
+        "class:TestDependencyNode",
+        "function:test_node_creation",
+        "function:test_node_default_values",
+        "class:TestDependencyEdge",
+        "function:test_edge_creation",
+        "class:TestDependencyGraph",
+        "function:setUp",
+        "function:test_add_node",
+        "function:test_add_edge",
+        "function:test_get_dependencies",
+        "function:test_get_dependents",
+        "function:test_detect_cycles_no_cycles",
+        "function:test_detect_cycles_with_cycles",
+        "function:test_topological_sort",
+        "class:TestDependencyAnalyzer",
+        "function:setUp",
+        "function:test_analyze_python_file",
+        "function:main",
+        "class:MyClass",
+        "function:test_analyze_javascript_file",
+        "function:test_analyze_java_file",
+        "class:TestDependencyGraphGenerator",
+        "function:setUp",
+        "function:test_generate_from_schema",
+        "function:test_serialize_graph",
+        "function:test_serialize_graph_size_constraint",
+        "class:TestDependencyGraphCLI",
+        "function:test_generate_dependency_graph_function",
+        "class:TestIntegration",
+        "function:test_full_workflow"
+      ],
+      "metadata": {
+        "modified": "2025-09-04T20:29:37.725399",
+        "type": ".py",
+        "ai_description": "Python source code file",
+        "extracted_description": "\"\"\"",
+        "size_bytes": 12315,
+        "code_summary": "Imports: os, json, tempfile, unittest, patch | Classes: TestDependencyNode(unittest.TestCase), TestDependencyEdge(unittest.TestCase), TestDependencyGraph(unittest.TestCase) | Functions: test_node_creation(0p), test_node_default_values(0p), test_edge_creation(0p), setUp(0p) | Decorators: patch('bu..."
+      }
+    },
+    {
+      "file_path": "test_integration.py",
+      "file_type": ".py",
+      "imports": [
+        "utils.dependency_graph",
+        "utils",
+        "config"
+      ],
+      "exports": [
+        "function:test_dependency_graph_integration",
+        "function:main",
+        "function:helper",
+        "class:Utility",
+        "class:Config"
+      ],
+      "metadata": {
+        "modified": "2025-09-04T20:31:57.117559",
+        "type": ".py",
+        "ai_description": "Python source code file",
+        "extracted_description": "\"\"\"",
+        "size_bytes": 4001,
+        "code_summary": "Imports: os, json, tempfile, DependencyGraphGenerator, generate_dependency_graph | Classes: Utility, Config | Functions: test_dependency_graph_integration(0p), main(0p), helper(0p) | Constants: DEBUG, API_KEY | Executable | Script entry point"
+      }
+    },
+    {
+      "file_path": "output/dependency-graph.json",
+      "file_type": ".json",
+      "imports": [],
+      "exports": [],
+      "metadata": {
+        "modified": "2025-09-04T21:48:04.255705",
+        "type": ".json",
+        "ai_description": "JSON configuration or data file",
+        "extracted_description": "(Binary file)",
+        "size_bytes": 15301,
+        "code_summary": ""
+      }
+    },
+    {
+      "file_path": "output/repo-schema.json",
+      "file_type": ".json",
+      "imports": [],
+      "exports": [],
+      "metadata": {
+        "modified": "2025-09-04T21:48:04.249100",
+        "type": ".json",
+        "ai_description": "JSON configuration or data file",
+        "extracted_description": "(Binary file)",
+        "size_bytes": 9750,
+        "code_summary": ""
+      }
+    },
+    {
+      "file_path": "output/repo-schema.md",
+      "file_type": ".md",
+      "imports": [],
+      "exports": [],
+      "metadata": {
+        "modified": "2025-09-04T21:48:04.249239",
+        "type": ".md",
+        "ai_description": "Markdown documentation file",
+        "extracted_description": "Scanned Path: /Users/jetstart/dev/ultrarepo/code/rebrand/reposchema",
+        "size_bytes": 3627,
+        "code_summary": "Sections: reposchema v1.0, Project Structure with Details"
+      }
+    },
+    {
+      "file_path": "output/schemas/repo-schema.json",
+      "file_type": ".json",
+      "imports": [],
+      "exports": [],
+      "metadata": {
+        "modified": "2025-09-04T17:53:50.042696",
+        "type": ".json",
+        "ai_description": "JSON configuration or data file",
+        "extracted_description": "(Binary file)",
+        "size_bytes": 110750,
+        "code_summary": ""
+      }
+    },
+    {
+      "file_path": "output/schemas/repo-schema.md",
+      "file_type": ".md",
+      "imports": [],
+      "exports": [],
+      "metadata": {
+        "modified": "2025-09-04T17:53:50.044137",
+        "type": ".md",
+        "ai_description": "Markdown documentation file",
+        "extracted_description": "Scanned Path: /Users/jetstart/dev/ultrarepo/code",
+        "size_bytes": 53124,
+        "code_summary": "Sections: code v1.0, Project Structure with Details"
+      }
+    },
+    {
+      "file_path": "utils/ai_service.py",
+      "file_type": ".py",
+      "imports": [
+        "dataclasses",
+        "aiohttp",
+        "aiohttp"
+      ],
+      "exports": [
+        "class:AIServiceConfig",
+        "class:CodeAnalysisRequest",
+        "class:CodeAnalysisResponse",
+        "class:LLMProvider",
+        "function:get_provider_name",
+        "function:validate_config",
+        "class:OpenAIProvider",
+        "function:get_provider_name",
+        "function:validate_config",
+        "class:AnthropicProvider",
+        "function:get_provider_name",
+        "function:validate_config",
+        "class:LocalProvider",
+        "function:get_provider_name",
+        "function:validate_config",
+        "class:ProviderFactory",
+        "function:create_provider",
+        "function:get_available_providers",
+        "function:get_provider_config_template",
+        "class:AIService",
+        "function:get_provider",
+        "class:KnowledgeGraphOptimizer",
+        "function:optimize_graph",
+        "function:clean_dict",
+        "function:compress_text",
+        "function:get_file_priority",
+        "function:validate_size",
+        "function:get_size_stats",
+        "class:EnhancedQdrantSchema",
+        "function:create_enhanced_payload",
+        "function:get_vector_size",
+        "function:get_collection_config",
+        "function:create_search_filters",
+        "function:validate_payload",
+        "function:get_ai_service",
+        "function:get_optimizer",
+        "function:get_schema"
+      ],
+      "metadata": {
+        "modified": "2025-09-04T20:08:02.980413",
+        "type": ".py",
+        "ai_description": "Python source code file",
+        "extracted_description": "\"\"\"",
+        "size_bytes": 31441,
+        "code_summary": "Imports: asyncio, json, logging, time, ABC | Classes: AIServiceConfig, CodeAnalysisRequest, CodeAnalysisResponse | Functions: get_provider_name(0p), validate_config(1p), get_provider_name(0p), validate_config(1p) | Decorators: dataclass, dataclass, dataclass | Async support | Executable | Script ..."
+      }
+    },
+    {
+      "file_path": "utils/dependency_graph.py",
+      "file_type": ".py",
+      "imports": [
+        "dataclasses",
+        "networkx"
+      ],
+      "exports": [
+        "class:DependencyNode",
+        "class:DependencyEdge",
+        "class:DependencyGraph",
+        "function:add_node",
+        "function:add_edge",
+        "function:get_dependencies",
+        "function:get_dependents",
+        "function:detect_cycles",
+        "function:get_subgraph",
+        "function:topological_sort",
+        "class:DependencyAnalyzer",
+        "function:analyze_file",
+        "class:DependencyGraphGenerator",
+        "function:generate_from_schema",
+        "function:serialize_graph",
+        "function:save_graph",
+        "function:export_to_arrows_app",
+        "function:generate_dependency_graph"
+      ],
+      "metadata": {
+        "modified": "2025-09-04T21:51:34.973848",
+        "type": ".py",
+        "ai_description": "Python source code file",
+        "extracted_description": "\"\"\"",
+        "size_bytes": 31878,
+        "code_summary": "Imports: os, json, logging, datetime, Dict | Classes: DependencyNode, DependencyEdge, DependencyGraph | Functions: __post_init__(0p), __post_init__(0p), __init__(0p), add_node(1p) | Decorators: dataclass, dataclass | Constants: NETWORKX_AVAILABLE, NETWORKX_AVAILABLE, G | Executable | Script entry..."
+      }
+    },
+    {
+      "file_path": "utils/qdrant_client.py",
+      "file_type": ".py",
+      "imports": [
+        "qdrant_client",
+        "qdrant_client.http"
+      ],
+      "exports": [
+        "class:QdrantManager",
+        "function:generate_collection_name",
+        "function:collection_exists",
+        "function:find_collections_by_project",
+        "function:create_collection",
+        "function:store_knowledge_graph",
+        "function:store_enhanced_knowledge_graph",
+        "function:search_similar",
+        "function:search_enhanced",
+        "function:search_by_metadata",
+        "function:get_collection_info",
+        "function:delete_collection",
+        "function:list_all_collections",
+        "function:validate_connection",
+        "function:main"
+      ],
+      "metadata": {
+        "modified": "2025-09-04T20:08:30.672413",
+        "type": ".py",
+        "ai_description": "Python source code file",
+        "extracted_description": "\"\"\"",
+        "size_bytes": 14136,
+        "code_summary": "Imports: os, json, hashlib, logging, Optional | Classes: QdrantManager | Functions: __init__(2p), generate_collection_name(2p), collection_exists(1p), find_collections_by_project(1p) | Constants: QDRANT_AVAILABLE, QDRANT_AVAILABLE | Executable | Script entry point"
+      }
+    },
+    {
+      "file_path": "utils/venv_manager.py",
+      "file_type": ".py",
+      "imports": [],
+      "exports": [
+        "class:VENVManager",
+        "function:is_venv_active",
+        "function:get_venv_python_path",
+        "function:check_required_packages",
+        "function:validate_environment",
+        "function:get_activation_command",
+        "function:suggest_setup_steps",
+        "function:main"
+      ],
+      "metadata": {
+        "modified": "2025-09-04T16:24:54.403173",
+        "type": ".py",
+        "ai_description": "Python source code file",
+        "extracted_description": "\"\"\"",
+        "size_bytes": 6114,
+        "code_summary": "Imports: os, sys, subprocess, logging, Path | Classes: VENVManager | Functions: __init__(1p), is_venv_active(0p), get_venv_python_path(0p), check_required_packages(1p) | Executable | Script entry point"
+      }
+    },
+    {
+      "file_path": "scripts/setup_venv.sh",
+      "file_type": ".sh",
+      "imports": [],
+      "exports": [],
+      "metadata": {
+        "modified": "2025-09-04T16:25:18.041101",
+        "type": ".sh",
+        "ai_description": "Shell script file",
+        "extracted_description": "(Binary file)",
+        "size_bytes": 2303,
+        "code_summary": ""
+      }
+    },
+    {
+      "file_path": "scripts/validate_setup.sh",
+      "file_type": ".sh",
+      "imports": [],
+      "exports": [],
+      "metadata": {
+        "modified": "2025-09-04T16:25:30.826367",
+        "type": ".sh",
+        "ai_description": "Shell script file",
+        "extracted_description": "(Binary file)",
+        "size_bytes": 3905,
+        "code_summary": ""
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source_file": "repo-schema.py",
+      "target_file": "utils/qdrant_client.py",
+      "dependency_type": "import",
+      "imported_items": [
+        "utils.qdrant_client"
+      ],
+      "line_number": null
+    },
+    {
+      "source_file": "repo-schema.py",
+      "target_file": "utils/dependency_graph.py",
+      "dependency_type": "import",
+      "imported_items": [
+        "utils.dependency_graph"
+      ],
+      "line_number": null
+    },
+    {
+      "source_file": "test_dependency_graph.py",
+      "target_file": "utils/dependency_graph.py",
+      "dependency_type": "import",
+      "imported_items": [
+        "dependency_graph"
+      ],
+      "line_number": null
+    },
+    {
+      "source_file": "test_integration.py",
+      "target_file": "utils/dependency_graph.py",
+      "dependency_type": "import",
+      "imported_items": [
+        "utils.dependency_graph"
+      ],
+      "line_number": null
+    },
+    {
+      "source_file": "utils/qdrant_client.py",
+      "target_file": "utils/qdrant_client.py",
+      "dependency_type": "import",
+      "imported_items": [
+        "qdrant_client"
+      ],
+      "line_number": null
+    }
+  ],
+  "metadata": {
+    "total_nodes": 17,
+    "total_edges": 5,
+    "cycles_detected": 1,
+    "generated_at": "2025-09-04 21:51:56.780069"
+  }
+}

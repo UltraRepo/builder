@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Dependency Graph</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .controls {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            background: rgba(0,0,0,0.8);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        button {
+            margin: 5px;
+            padding: 8px 16px;
+            background: #007acc;
+            color: white;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #005aa3;
+        }
+    </style>
+</head>
+<body>
+    <div class="controls">
+        <button onclick="loadDependencyGraph()">Load Dependency Graph</button>
+        <button onclick="clearGraph()">Clear Graph</button>
+    </div>
+    <iframe id="arrows-frame" src="http://localhost:3000" onload="onArrowsLoad()"></iframe>
+
+    <script>
+        let graphData = null;
+
+        // Load dependency graph data
+        async function loadGraphData() {
+            try {
+                const response = await fetch('./rebrand/reposchema/output/dependency-graph.json');
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}`);
+                }
+                graphData = await response.json();
+                console.log('Loaded graph data:', graphData.nodes?.length || 0, 'nodes,', graphData.edges?.length || 0, 'edges');
+                return true;
+            } catch (error) {
+                console.error('Failed to load graph data:', error);
+                alert('Could not load dependency-graph.json. Make sure the file exists at rebrand/reposchema/output/dependency-graph.json');
+                return false;
+            }
+        }
+
+        function onArrowsLoad() {
+            console.log('Arrows app loaded');
+            // Auto-load data after a short delay
+            setTimeout(() => {
+                loadDependencyGraph();
+            }, 2000);
+        }
+
+        async function loadDependencyGraph() {
+            if (!graphData) {
+                const success = await loadGraphData();
+                if (!success) return;
+            }
+
+            const iframe = document.getElementById('arrows-frame');
+            if (!iframe || !iframe.contentWindow) {
+                console.error('Arrows iframe not ready');
+                return;
+            }
+
+            try {
+                // Convert dependency graph format to Arrows format
+                const arrowsGraph = convertToArrowsFormat(graphData);
+
+                // Send data via postMessage to arrows window
+                console.log('Sending graph data to arrows...');
+
+                iframe.contentWindow.postMessage(arrowsGraph, '*');
+
+                console.log('Graph data sent successfully:', arrowsGraph.nodes?.length || 0, 'nodes');
+
+            } catch (error) {
+                console.error('Error loading graph data:', error);
+                alert('Error loading graph data: ' + error.message);
+            }
+        }
+
+        function clearGraph() {
+            const iframe = document.getElementById('arrows-frame');
+            if (iframe && iframe.contentWindow) {
+                // Try to clear the graph
+                iframe.contentWindow.postMessage({
+                    type: 'CLEAR_GRAPH'
+                }, '*');
+            }
+        }
+
+        function convertToArrowsFormat(dependencyData) {
+            const nodeIdMap = new Map();
+
+            return {
+                nodes: dependencyData.nodes.map((node, index) => {
+                    const nodeId = `n${index}`;
+                    nodeIdMap.set(node.file_path, nodeId);
+
+                    // Get file extension for color coding
+                    const fileExt = node.file_type || node.file_path.split('.').pop() || '';
+                    const color = getFileTypeColor(fileExt);
+
+                    return {
+                        id: nodeId,
+                        labels: [fileExt.toUpperCase() || 'FILE'],
+                        properties: {
+                            file_path: node.file_path,
+                            imports_count: node.imports?.length || 0,
+                            exports_count: node.exports?.length || 0,
+                            file_type: node.file_type || '',
+                            size_bytes: node.metadata?.size_bytes || 0
+                        },
+                        position: {
+                            x: Math.random() * 800 + 100,
+                            y: Math.random() * 600 + 100
+                        },
+                        style: {
+                            nodeColor: color
+                        }
+                    };
+                }),
+                relationships: dependencyData.edges.map((edge, index) => {
+                    const sourceId = nodeIdMap.get(edge.source_file);
+                    const targetId = nodeIdMap.get(edge.target_file);
+
+                    if (!sourceId || !targetId) {
+                        console.warn('Missing node mapping for edge:', edge);
+                        return null;
+                    }
+
+                    return {
+                        id: `r${index}`,
+                        type: 'DEPENDS_ON',
+                        fromId: sourceId,
+                        toId: targetId,
+                        properties: {
+                            import_type: edge.dependency_type || 'import',
+                            imported_items: edge.imported_items || []
+                        }
+                    };
+                }).filter(edge => edge !== null)
+            };
+        }
+
+        function getFileTypeColor(fileType) {
+            const colors = {
+                'py': '#3776AB',      // Python blue
+                'js': '#F7DF1E',      // JavaScript yellow
+                'ts': '#3178C6',      // TypeScript blue
+                'tsx': '#3178C6',     // TypeScript blue
+                'java': '#ED8B00',    // Java orange
+                'cs': '#239120',      // C# green
+                'go': '#00ADD8',      // Go cyan
+                'rs': '#000000',      // Rust black
+                'html': '#E34F26',    // HTML orange
+                'css': '#1572B6',     // CSS blue
+                'json': '#000000',    // JSON black
+                'md': '#083FA1'       // Markdown blue
+            };
+            return colors[fileType] || '#666666'; // Default gray
+        }
+
+        // Load data on page load
+        loadGraphData();
+    </script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+[submodule "upstream/kilocode"]
+	path = upstream/kilocode
+	url = https://github.com/Kilo-Org/kilocode
+[submodule "upstream/arrows"]
+	path = upstream/arrows
+	url = https://github.com/neo4j-labs/arrows.app.git
+[submodule "upstream/infranow"]
+	path = upstream/infranow
+	url = https://github.com/InfraNow/core

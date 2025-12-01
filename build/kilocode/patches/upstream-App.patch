@@ -1,0 +1,15 @@
+diff --git a/webview-ui/src/App.tsx b/webview-ui/src/App.tsx
+index aff4b294f..b190f049a 100644
+--- a/webview-ui/src/App.tsx
++++ b/webview-ui/src/App.tsx
+@@ -29,8 +29,9 @@ import { useAddNonInteractiveClickListener } from "./components/ui/hooks/useNonI
+ import { TooltipProvider } from "./components/ui/tooltip"
+ import { STANDARD_TOOLTIP_DELAY } from "./components/ui/standard-tooltip"
+ import { useKiloIdentity } from "./utils/kilocode/useKiloIdentity"
++import GraphView from "../../../rebrand/kilocode/webview-ui/src/components/dependency-graph/GraphView"
+ 
+-type Tab = "settings" | "history" | "mcp" | "modes" | "chat" | "marketplace" | "account" | "profile" // kilocode_change: add "profile"
++type Tab = "settings" | "history" | "mcp" | "modes" | "chat" | "marketplace" | "account" | "profile" | "graph" // kilocode_change: add "profile" and "graph"
+ 
+ interface HumanRelayDialogState {
+ 	isOpen: boolean
