@@ -1,7 +1,7 @@
 #!/bin/bash
-# build-airveo-complete.sh
-# Complete AirVeo Builder build with proper branding, command refactoring, and icon restoration
-# Usage: bash build-airveo-complete.sh
+# build-ultrarepo-complete.sh
+# Complete UltraRepo Builder build with proper branding, command refactoring, and icon restoration
+# Usage: bash build-ultrarepo-complete.sh
 
 set -e
 
@@ -14,30 +14,30 @@ REBRAND_SCRIPT="$SCRIPT_DIR/icon-rebrand-builder.sh"
 ROOT="$(cd "$(dirname "$0")/../../build/kilocode" && pwd)"
 cd "$ROOT"
 
-echo "🚀 Starting complete AirVeo Builder build process..."
+echo "🚀 Starting complete UltraRepo Builder build process..."
 echo "📁 Build directory: $ROOT"
 
 # Install dependencies
 echo "📦 Installing dependencies..."
 pnpm install
 
-# --- Step 0: Apply AirVeo Builder webview and file rebranding ---
+# --- Step 0: Apply UltraRepo Builder webview and file rebranding ---
 if [ -x "$REBRAND_WEBVIEWS_SCRIPT" ]; then
   echo ""
-  echo "🎨 Step 0: Applying AirVeo Builder webview and file rebranding..."
+  echo "🎨 Step 0: Applying UltraRepo Builder webview and file rebranding..."
   NO_BACKUP=true bash "$REBRAND_WEBVIEWS_SCRIPT"
 else
   echo "[WARN] Webview rebranding script not found or not executable: $REBRAND_WEBVIEWS_SCRIPT"
 fi
 
-# --- Step 1: Apply AirVeo Builder branding (extension ID, display name) ---
+# --- Step 1: Apply UltraRepo Builder branding (extension ID, display name) ---
 SRC_DIR="$ROOT/src"
 if [ -x "$PATCH_NLS_SCRIPT" ]; then
   echo ""
-  echo "🏷️  Step 1: Applying AirVeo Builder branding..."
+  echo "🏷️  Step 1: Applying UltraRepo Builder branding..."
   bash "$PATCH_NLS_SCRIPT" "$SRC_DIR"
 else
-  echo "[ERROR] AirVeo Builder branding script not found or not executable: $PATCH_NLS_SCRIPT"
+  echo "[ERROR] UltraRepo Builder branding script not found or not executable: $PATCH_NLS_SCRIPT"
   exit 1
 fi
 
@@ -51,12 +51,12 @@ else
   echo "[WARN] Command refactoring script not found or not executable: $REFACTOR_COMMANDS_SCRIPT"
 fi
 
-# --- Step 2: Apply AirVeo Builder icon rebranding BEFORE building ---
+# --- Step 2: Apply UltraRepo Builder icon rebranding BEFORE building ---
 SRC_ICONS_DIR="$ROOT/src/assets/icons"
 SRC_IMAGES_DIR="$ROOT/src/assets/images"
 if [ -x "$REBRAND_SCRIPT" ]; then
   echo ""
-  echo "🎨 Step 2: Applying AirVeo Builder icon rebranding (src/assets/icons & src/assets/images)..."
+  echo "🎨 Step 2: Applying UltraRepo Builder icon rebranding (src/assets/icons & src/assets/images)..."
   bash "$REBRAND_SCRIPT" "$SRC_ICONS_DIR"
   if [ -d "$SRC_IMAGES_DIR" ]; then
     bash "$REBRAND_SCRIPT" "$SRC_IMAGES_DIR"
@@ -91,8 +91,8 @@ VERSION=$(jq -r .version src/package.json)
 # Ensure dist directory exists
 mkdir -p dist
 
-# Copy/rename to dist/airveo-$VERSION.vsix
-VSIX_OUT="dist/airveo-$VERSION.vsix"
+# Copy/rename to dist/ultrarepo-$VERSION.vsix
+VSIX_OUT="dist/ultrarepo-$VERSION.vsix"
 if [ "$VSIX_ORIG" != "$VSIX_OUT" ]; then
   mv "$VSIX_ORIG" "$VSIX_OUT"
 fi
@@ -101,17 +101,17 @@ fi
 ASSETS_DIR="$ROOT/assets/icons"
 if [ -x "$REBRAND_SCRIPT" ] && [ -d "$ASSETS_DIR" ]; then
   echo ""
-  echo "🎨 Step 6: Applying AirVeo Builder icon rebranding (build assets)..."
+  echo "🎨 Step 6: Applying UltraRepo Builder icon rebranding (build assets)..."
   bash "$REBRAND_SCRIPT" "$ASSETS_DIR"
 fi
 
 echo ""
-echo "🎉 AirVeo Builder build complete!"
+echo "🎉 UltraRepo App Builder build complete!"
 echo ""
 echo "📦 VSIX Output: $VSIX_OUT"
-echo "🏷️  Extension ID: AirVeo.builder"
-echo "📛 Display Name: AirVeo Builder"
-echo "🎨 Icons: AirVeo Builder branded"
+echo "🏷️  Extension ID: UltraRepo.builder"
+echo "📛 Display Name: UltraRepo Builder"
+echo "🎨 Icons: UltraRepo Builder branded"
 echo "⚙️  Commands: builder.* prefixed"
 echo ""
 echo "🔍 To install and test:"

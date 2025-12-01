@@ -57,7 +57,7 @@ let outputChannel: vscode.OutputChannel
 let extensionContext: vscode.ExtensionContext
 
 // ---- Inline Home Webview (InfraNow-style) ----
-const HOME_APP_NAME = "AirVeo App Builder"
+const HOME_APP_NAME = "UltraRepo App Builder"
 const HOME_PRIMARY = "#0B65D8"
 const HOME_BG = "#0D1117"
 
@@ -182,12 +182,12 @@ class UltraHomePanel {
 		</nav>
 	</header>
 	<div class="wrap">
-		<section id="home" class="active"><div class="card"><h2>Home</h2><p class="muted">Welcome to AirVeo App Builder - your AI coding assistant. Choose a feature from the navigation above to get started.</p><button onclick="vscode.postMessage({type:'run-cmd', cmd:'ultrarepo.showDependencyGraph'})" style="margin-top:16px;padding:10px 20px;background:var(--primary);color:#fff;border:none;border-radius:8px;cursor:pointer;">Open Dependency Graph</button></div></section>
+		<section id="home" class="active"><div class="card"><h2>Home</h2><p class="muted">Welcome to UltraRepo App Builder - your AI coding assistant. Choose a feature from the navigation above to get started.</p><button onclick="vscode.postMessage({type:'run-cmd', cmd:'ultrarepo.showDependencyGraph'})" style="margin-top:16px;padding:10px 20px;background:var(--primary);color:#fff;border:none;border-radius:8px;cursor:pointer;">Open Dependency Graph</button></div></section>
 			<section id="graph"><div class="card"><h2>Dependency Graph</h2><p class="muted">Visualize and explore your project dependencies. Click the button below to open the graph.</p><button onclick="vscode.postMessage({type:'run-cmd', cmd:'ultrarepo.showDependencyGraph'})" style="margin-top:16px;padding:10px 20px;background:var(--primary);color:#fff;border:none;border-radius:8px;cursor:pointer;">Open Dependency Graph</button>
 			<p class="muted" style="margin-top:10px">Note: make sure to start the Arrows Graph Server before opening the graph. From the repo root run:<br><code>bash rebrand/scripts/start-arrows.sh</code><br>If you already installed dependencies, you can skip install:<br><code>bash rebrand/scripts/start-arrows.sh --skip-install</code></p></div></section>
-		<section id="commands"><div class="card"><h2>Commands</h2><p class="muted">Access AirVeo App Builder commands and features. Use the command palette (Ctrl+Shift+P) to explore available commands.</p></div></section>
+		<section id="commands"><div class="card"><h2>Commands</h2><p class="muted">Access UltraRepo App Builder commands and features. Use the command palette (Ctrl+Shift+P) to explore available commands.</p></div></section>
 			<section id="mcp"><div class="card"><h2>MCP Services</h2><p class="muted">Manage and configure Model Context Protocol services for enhanced AI capabilities.</p><button onclick="vscode.postMessage({type:'run-cmd', cmd:'ultrarepo.mcpButtonClicked'})">Open MCP Settings</button></div></section>
-			<section id="settings"><div class="card"><h2>Settings</h2><p class="muted">Configure AirVeo App Builder settings and preferences.</p><button onclick="vscode.postMessage({type:'run-cmd', cmd:'ultrarepo.settingsButtonClicked'})">Open Settings</button></div></section>
+			<section id="settings"><div class="card"><h2>Settings</h2><p class="muted">Configure UltraRepo App Builder settings and preferences.</p><button onclick="vscode.postMessage({type:'run-cmd', cmd:'ultrarepo.settingsButtonClicked'})">Open Settings</button></div></section>
 	</div>
 	<script nonce="${nonce}">
 		const vscode = acquireVsCodeApi();
@@ -377,11 +377,11 @@ export async function activate(context: vscode.ExtensionContext) {
 
 	// kilocode_change start
 	if (!context.globalState.get("firstInstallCompleted")) {
-		outputChannel.appendLine("First installation detected, opening AirVeo Builder sidebar!")
+		outputChannel.appendLine("First installation detected, opening UltraRepo Builder sidebar!")
 		try {
 			await vscode.commands.executeCommand("ultrarepo.SidebarProvider.focus")
 
-			outputChannel.appendLine("Opening AirVeo Builder walkthrough")
+			outputChannel.appendLine("Opening UltraRepo Builder walkthrough")
 
 			// this can crash, see:
 			// https://discord.com/channels/1349288496988160052/1395865796026040470

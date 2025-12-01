@@ -25,8 +25,8 @@ if [ -f "$PACKAGE_JSON" ]; then
   sed -i '' 's/ultrarepo\./builder./g' "$PACKAGE_JSON"
   sed -i '' 's/builder\.com/ultrarepo.com/g' "$PACKAGE_JSON"
   
-  # Replace "UltraRepo.ultrarepo" with "AirVeo.builder"
-  sed -i '' 's/UltraRepo\.ultrarepo/AirVeo.builder/g' "$PACKAGE_JSON"
+  # Replace "UltraRepo.ultrarepo" with "UltraRepo.builder"
+  sed -i '' 's/UltraRepo\.ultrarepo/UltraRepo.builder/g' "$PACKAGE_JSON"
   
   echo "Patched $PACKAGE_JSON"
 fi
@@ -39,7 +39,7 @@ if [ -f "$EXTENSION_TS" ]; then
   sed -i '' 's/builder\.com/ultrarepo.com/g' "$EXTENSION_TS"
   
   # Replace UltraRepo.ultrarepo
-  sed -i '' 's/UltraRepo\.ultrarepo/AirVeo.builder/g' "$EXTENSION_TS"
+  sed -i '' 's/UltraRepo\.ultrarepo/UltraRepo.builder/g' "$EXTENSION_TS"
   
   # Replace ultrarepoHomePanel with builderHomePanel (variable name/view type)
   sed -i '' 's/ultrarepoHomePanel/builderHomePanel/g' "$EXTENSION_TS"

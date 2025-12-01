@@ -1,7 +1,7 @@
 #!/bin/bash
 # rebrand-webviews-builder.sh
 # Copy all rebranded files from rebrand/kilocode/ to build/kilocode/
-# This includes webviews, documentation, and other customized files for AirVeo Builder
+# This includes webviews, documentation, and other customized files for UltraRepo Builder
 # Usage: bash rebrand-webviews-builder.sh
 # Environment variables:
 #   NO_BACKUP=true    Skip creating backup files (default: false)
@@ -14,7 +14,7 @@ PROJECT_ROOT="$(cd "$SCRIPT_DIR/../.." && pwd)"
 REBRAND_DIR="$PROJECT_ROOT/rebrand/kilocode"
 BUILD_DIR="$PROJECT_ROOT/build/kilocode"
 
-echo "🎨 Starting AirVeo Builder webview and file rebranding..."
+echo "🎨 Starting UltraRepo Builder webview and file rebranding..."
 echo "📁 Source: $REBRAND_DIR"
 echo "📁 Target: $BUILD_DIR"
 
@@ -93,7 +93,7 @@ for rel in "${CRITICAL_FILES[@]}"; do
 done
 
 echo ""
-echo "✅ AirVeo Builder webview rebranding complete!"
+echo "✅ UltraRepo Builder webview rebranding complete!"
 echo "📊 Files processed: $copied_count"
 echo "🔒 Critical files ensured: $ensured_count (${CRITICAL_FILES[*]})"
 echo ""

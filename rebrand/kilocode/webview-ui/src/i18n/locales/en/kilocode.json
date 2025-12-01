@@ -1,9 +1,9 @@
 {
 	"welcome": {
-		"greeting": "Welcome to AirVeo App Builder!",
+		"greeting": "Welcome to UltraRepo App Builder!",
 		"introText1": "Own Your Apps, Own Your Data, Own Your Future.",
-		"introText2": "AirVeo App Builder works with both private and public AI models.  We support private fine tuned models, private AI repositories and private database use.",
-		"introText3": "Apps can be deployed to the AirVeo App Store for use in your workspace.",
+		"introText2": "UltraRepo App Builder works with both private and public AI models.  We support private fine tuned models, private AI repositories and private database use.",
+		"introText3": "Apps can be deployed to the UltraRepo App Store for use in your workspace.",
 		"ctaButton": "Get Started",
 		"manualModeButton": "Get Started",
 		"alreadySignedUp": "Already signed up?",
@@ -29,13 +29,13 @@
 			"mcp": "MCP Servers"
 		},
 		"provider": {
-			"account": "AirVeo Builder Account",
-			"apiKey": "AirVeo Builder API Key",
-			"login": "Log in at AirVeo Builder",
-			"logout": "Log out from AirVeo Builder",
+			"account": "UltraRepo Builder Account",
+			"apiKey": "UltraRepo Builder API Key",
+			"login": "Log in at UltraRepo Builder",
+			"logout": "Log out from UltraRepo Builder",
 			"providerRouting": {
-				"title": "AirVeo Builder - OpenRouter Provider Routing",
-				"description": "AirVeo Builder routes requests to the best available providers for your model. By default, requests are load balanced across the top providers to maximize uptime. However, you can choose a specific provider to use for this model.",
+				"title": "UltraRepo Builder - OpenRouter Provider Routing",
+				"description": "UltraRepo Builder routes requests to the best available providers for your model. By default, requests are load balanced across the top providers to maximize uptime. However, you can choose a specific provider to use for this model.",
 				"sorting": {
 					"default": "Default provider sorting",
 					"price": "Prefer providers with lower price",
@@ -48,13 +48,13 @@
 					"deny": "Deny provider data collection"
 				}
 			},
-			"automaticFetch": "The latest models are automatically available in AirVeo Builder. If you're unsure which model to choose, AirVeo Builder works best with the recommended models listed at the top in <strong>bold face</strong>."
+			"automaticFetch": "The latest models are automatically available in UltraRepo Builder. If you're unsure which model to choose, UltraRepo Builder works best with the recommended models listed at the top in <strong>bold face</strong>."
 		},
 		"modelInfo": {
 			"contextWindow": "Context window",
 			"providerBreakdown": "Provider Price and Capability Breakdown",
-			"averageKiloCodeCost": "Average AirVeo Builder cost",
-			"averageKiloCodeCostDescription": "This is the average actual spent for AirVeo Builder using this model over the last week. It may be lower than the listed price due to prompt cache utilization.",
+			"averageKiloCodeCost": "Average UltraRepo Builder cost",
+			"averageKiloCodeCostDescription": "This is the average actual spent for UltraRepo Builder using this model over the last week. It may be lower than the listed price due to prompt cache utilization.",
 			"table": {
 				"provider": "Provider",
 				"context": "The endpoint can process this number of tokens (input + output).",
@@ -67,15 +67,15 @@
 		"contextManagement": {
 			"allowVeryLargeReads": {
 				"label": "Allow very large file reads",
-				"description": "When enabled, AirVeo Builder will perform very large file or MCP output reads even if there is a high chance of overflowing the context window (content size >80% of context window)."
+				"description": "When enabled, UltraRepo Builder will perform very large file or MCP output reads even if there is a high chance of overflowing the context window (content size >80% of context window)."
 			}
 		},
 		"systemNotifications": {
 			"label": "Enable System Notifications",
-			"description": "When enabled, AirVeo Builder will send system notifications for important events like task completion or errors.",
+			"description": "When enabled, UltraRepo Builder will send system notifications for important events like task completion or errors.",
 			"testButton": "Test Notification",
-			"testTitle": "AirVeo Builder",
-			"testMessage": "This is a test notification from AirVeo Builder."
+			"testTitle": "UltraRepo Builder",
+			"testMessage": "This is a test notification from UltraRepo Builder."
 		},
 		"terminal": {
 			"commandGenerator": {
@@ -90,7 +90,7 @@
 	},
 	"chat": {
 		"condense": {
-			"wantsToCondense": "AirVeo Builder wants to condense your conversation",
+			"wantsToCondense": "UltraRepo Builder wants to condense your conversation",
 			"condenseConversation": "Condense Conversation"
 		}
 	},

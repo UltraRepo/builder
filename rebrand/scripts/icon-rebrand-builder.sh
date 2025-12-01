@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # icon-rebrand-builder.sh
-# Rebrand KiloCode extension icons to AirVeo Builder icons after VSIX build.
+# Rebrand KiloCode extension icons to UltraRepo Builder icons after VSIX build.
 # Usage: bash icon-rebrand-builder.sh <path-to-extension-assets-folder>
 
 set -e
@@ -13,7 +13,7 @@ if [ -z "$TARGET_ICONS" ]; then
   exit 1
 fi
 
-# Mapping: KiloCode icon name | AirVeo Builder icon name (from rebrand/assets/icons)
+# Mapping: KiloCode icon name | UltraRepo Builder icon name (from rebrand/assets/icons)
 MAPPING="
 kilo.png|icon.png
 kilo-dark.png|icon.png
@@ -45,7 +45,7 @@ echo "$MAPPING" | while IFS='|' read -r KILO_ICON BUILDER_ICON; do
     cp "$SRC" "$DEST"
     echo "Replaced $DEST with $SRC"
   else
-    echo "[WARN] AirVeo Builder icon not found: $SRC (skipped $DEST)" >&2
+    echo "[WARN] UltraRepo Builder icon not found: $SRC (skipped $DEST)" >&2
   fi
 done
 
@@ -60,7 +60,7 @@ if [ -d "$TARGET_IMAGES" ]; then
       cp "$SRC" "$DEST"
       echo "Replaced $DEST with $SRC"
     else
-      echo "[WARN] AirVeo Builder icon not found: $SRC (skipped $DEST)" >&2
+      echo "[WARN] UltraRepo Builder icon not found: $SRC (skipped $DEST)" >&2
     fi
   done
 fi
